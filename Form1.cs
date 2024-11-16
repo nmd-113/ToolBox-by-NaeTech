@@ -55,32 +55,56 @@ namespace ToolBox_by_NaeTech
         {
             Directory.CreateDirectory(tempPath); // Create temporary folder
 
-            // Show loading message
+            // Show loading message and initialize progress bar
+
             loadingLabel.Visible = true;
+            installationProgressBar.Visible = true;
+            loadingback.Visible = true;
+            installationProgressBar.Value = 0;
 
             var results = new StringBuilder("Installation Summary:\n\n");
+            var tasks = new List<Func<Task>>();
 
-            if (check1.Checked) await DownloadAndInstallAsync("K-Lite Mega Codec Pack", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/K-Lite_Codec_Pack_1865_Standard.exe", "/verysilent", results);
-            if (check2.Checked) await DownloadAndInstallAsync("VLC Media Player", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/vlc-3.0.21-win64.exe", "/L=1033 /S", results);
-            if (check3.Checked) await DownloadAndInstallAsync("7-Zip", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/7z2408-x64.exe", "/S", results);
-            if (check4.Checked) await DownloadAndInstallAsync("qBittorrent", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/qbittorrent_5.0.1_x64_setup.exe", "/S", results);
-            if (check5.Checked) await DownloadAndInstallAsync("Steam", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/SteamSetup.exe", "/S", results);
-            if (check6.Checked) await DownloadAndInstallAsync("Epic Games", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/EpicInstaller-15.17.1.msi", "/passive", results);
-            if (check7.Checked) await DownloadAndInstallAsync("Ubisoft Connect", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/UbisoftConnectInstaller.exe", "/S", results);
-            if (check8.Checked) await DownloadAndInstallAsync("EA App", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/EAappInstaller.exe", "/S", results);
-            if (check9.Checked) await DownloadAndInstallAsync("GOG Galaxy", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/setup_galaxy_2.0.77.22.exe", "/verysilent", results);
-            if (check10.Checked) await DownloadAndInstallAsync("Geforce Now", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/GeForceNOW-release.exe", "/S", results);
-            if (check15.Checked) await DownloadAndInstallAsync("Chrome Browser", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/ChromeSetup.exe", "/silent /install", results);
-            if (check16.Checked) await DownloadAndInstallAsync("Firefox Browser", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/Firefox_Setup_132.0b9.exe", "/S /PreventRebootRequired=true", results);
-            if (check17.Checked) await DownloadAndInstallAsync("Opera Browser", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/Opera_114.0.5282.94_Setup_x64.exe", "/silent /allusers=1 /launchopera=0 /setdefaultbrowser=0", results);
-            if (check18.Checked) await DownloadAndInstallAsync("Brave Browser", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/BraveBrowserStandaloneSilentSetup.exe", "", results);
-            if (check11.Checked) await DownloadAndInstallAsync("DirectX", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/directx_Jun2010_redist.zip", "", results, true);
-            if (check12.Checked) await DownloadAndInstallAsync(".Net Runtime 8.0.10", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/windowsdesktop-runtime-8.0.10-win-x64.exe", "/install /quiet /norestart", results);
-            if (check13.Checked) await DownloadAndInstallAsync("Visual C++ (All-In-One)", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/Visual-C-Runtimes-All-in-One-Oct-2024.zip", "", results, true);
-            if (check14.Checked) await DownloadAndInstallAsync(".Net Framework 4.8.1", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/NDP481-x86-x64-AllOS-ENU.exe", "/quiet /AcceptEULA /norestart", results);
+            // Count the number of checked checkboxes
+            int totalTasks = this.Controls.OfType<CheckBox>().Count(cb => cb.Checked);
+            if (totalTasks == 0)
+            {
+                loadingback.Visible = false;
+                loadingLabel.Visible = false;
+                installationProgressBar.Visible = false;
+                MessageBox.Show("No applications selected for installation.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
 
-            // Hide the loading message
+            if (check1.Checked) tasks.Add(() => DownloadAndInstallAsync("K-Lite Mega Codec Pack", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/K-Lite_Codec_Pack_1865_Standard.exe", "/verysilent", results));
+            if (check2.Checked) tasks.Add(() => DownloadAndInstallAsync("VLC Media Player", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/vlc-3.0.21-win64.exe", "/L=1033 /S", results));
+            if (check3.Checked) tasks.Add(() => DownloadAndInstallAsync("7-Zip", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/7z2408-x64.exe", "/S", results));
+            if (check4.Checked) tasks.Add(() => DownloadAndInstallAsync("qBittorrent", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/qbittorrent_5.0.1_x64_setup.exe", "/S", results));
+            if (check5.Checked) tasks.Add(() => DownloadAndInstallAsync("Steam", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/SteamSetup.exe", "/S", results));
+            if (check6.Checked) tasks.Add(() => DownloadAndInstallAsync("Epic Games", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/EpicInstaller-15.17.1.msi", "/passive", results));
+            if (check7.Checked) tasks.Add(() => DownloadAndInstallAsync("Ubisoft Connect", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/UbisoftConnectInstaller.exe", "/S", results));
+            if (check8.Checked) tasks.Add(() => DownloadAndInstallAsync("EA App", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/EAappInstaller.exe", "/S", results));
+            if (check9.Checked) tasks.Add(() => DownloadAndInstallAsync("GOG Galaxy", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/setup_galaxy_2.0.77.22.exe", "/verysilent", results));
+            if (check10.Checked) tasks.Add(() => DownloadAndInstallAsync("Geforce Now", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/GeForceNOW-release.exe", "/S", results));
+            if (check15.Checked) tasks.Add(() => DownloadAndInstallAsync("Chrome Browser", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/ChromeSetup.exe", "/silent /install", results));
+            if (check16.Checked) tasks.Add(() => DownloadAndInstallAsync("Firefox Browser", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/Firefox_Setup_132.0b9.exe", "/S /PreventRebootRequired=true", results));
+            if (check17.Checked) tasks.Add(() => DownloadAndInstallAsync("Opera Browser", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/Opera_114.0.5282.94_Setup_x64.exe", "/silent /allusers=1 /launchopera=0 /setdefaultbrowser=0", results));
+            if (check18.Checked) tasks.Add(() => DownloadAndInstallAsync("Brave Browser", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/BraveBrowserStandaloneSilentSetup.exe", "", results));
+            if (check11.Checked) tasks.Add(() => DownloadAndInstallAsync("DirectX", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/directx_Jun2010_redist.zip", "", results, true));
+            if (check12.Checked) tasks.Add(() => DownloadAndInstallAsync(".Net Runtime 8.0.10", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/windowsdesktop-runtime-8.0.10-win-x64.exe", "/install /quiet /norestart", results));
+            if (check13.Checked) tasks.Add(() => DownloadAndInstallAsync("Visual C++ (All-In-One)", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/Visual-C-Runtimes-All-in-One-Oct-2024.zip", "", results, true));
+            if (check14.Checked) tasks.Add(() => DownloadAndInstallAsync(".Net Framework 4.8.1", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/NDP481-x86-x64-AllOS-ENU.exe", "/quiet /AcceptEULA /norestart", results));
+
+            foreach (var task in tasks)
+            {
+                installationProgressBar.Value = 0; // Reset progress bar for each app
+                await task();
+            }
+
+            // Hide the loading message and progress bar
             loadingLabel.Visible = false;
+            installationProgressBar.Visible = false;
+            loadingback.Visible = false;
 
             // Show the summary and clean up
             MessageBox.Show(results.ToString(), "Installation Summary");
@@ -96,14 +120,28 @@ namespace ToolBox_by_NaeTech
             }
         }
 
+
         private async Task DownloadAndInstallAsync(string appName, string url, string arguments, StringBuilder results, bool isZip = false)
         {
             string fileName = Path.Combine(tempPath, Path.GetFileName(url));
 
             try
             {
+                loadingLabel.Invoke((Action)(() =>
+                {
+                    loadingLabel.Text = $"Downloading: {appName}";
+                }));
+
                 using (WebClient client = new WebClient())
                 {
+                    client.DownloadProgressChanged += (s, e) =>
+                    {
+                        installationProgressBar.Invoke((Action)(() =>
+                        {
+                            installationProgressBar.Value = e.ProgressPercentage / 2; // Allocate 50% for download
+                        }));
+                    };
+
                     await client.DownloadFileTaskAsync(new Uri(url), fileName); // Download installer
                 }
 
@@ -117,7 +155,6 @@ namespace ToolBox_by_NaeTech
                     {
                         fileName = Path.Combine(extractedPath, "install_all.bat");
                     }
-                    // Set fileName to DXSETUP.exe path
                     else if (appName == "DirectX")
                     {
                         fileName = Path.Combine(extractedPath, "DXSETUP.exe");
@@ -125,11 +162,14 @@ namespace ToolBox_by_NaeTech
                     }
                 }
 
-                // Determine if the file is an MSI or EXE
+                loadingLabel.Invoke((Action)(() =>
+                {
+                    loadingLabel.Text = $"Installing: {appName}";
+                }));
+
                 Process process;
                 if (fileName.EndsWith(".msi", StringComparison.OrdinalIgnoreCase))
                 {
-                    // Use MsiExec for MSI files
                     process = Process.Start(new ProcessStartInfo
                     {
                         FileName = "MsiExec.exe",
@@ -140,7 +180,6 @@ namespace ToolBox_by_NaeTech
                 }
                 else
                 {
-                    // Use direct execution for EXE files
                     process = Process.Start(new ProcessStartInfo
                     {
                         FileName = fileName,
@@ -150,7 +189,16 @@ namespace ToolBox_by_NaeTech
                     });
                 }
 
-                process.WaitForExit(); // Wait for process completion
+                int installationProgress = 50; // Start at 50% for installation
+                while (!process.HasExited)
+                {
+                    await Task.Delay(500); // Wait for process completion
+                    installationProgressBar.Invoke((Action)(() =>
+                    {
+                        installationProgressBar.Value = Math.Min(installationProgress + 1, 100); // Increment progress bar gradually
+                        installationProgress++;
+                    }));
+                }
 
                 // Log result based on process exit code
                 results.AppendLine($"{appName}: {(process.ExitCode == 0 ? "Success" : "Failed")}");
@@ -160,6 +208,7 @@ namespace ToolBox_by_NaeTech
                 results.AppendLine($"{appName}: Failed - {ex.Message}");
             }
         }
+
 
         ///////////////////////
         /// WINDOWS TWEAKER ///

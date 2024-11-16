@@ -92,9 +92,12 @@ namespace ToolBox_by_NaeTech
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.exitbtn = new System.Windows.Forms.Button();
             this.minimizebtn = new System.Windows.Forms.Button();
+            this.installationProgressBar = new System.Windows.Forms.ProgressBar();
+            this.loadingback = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loadingback)).BeginInit();
             this.SuspendLayout();
             // 
             // installbtn
@@ -740,16 +743,15 @@ namespace ToolBox_by_NaeTech
             // 
             this.loadingLabel.AutoSize = true;
             this.loadingLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(20)))), ((int)(((byte)(40)))));
-            this.loadingLabel.Font = new System.Drawing.Font("Segoe UI Variable Display", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loadingLabel.Font = new System.Drawing.Font("Segoe UI Variable Display", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loadingLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.loadingLabel.Location = new System.Drawing.Point(-2, -2);
+            this.loadingLabel.Location = new System.Drawing.Point(200, 225);
             this.loadingLabel.Margin = new System.Windows.Forms.Padding(0);
             this.loadingLabel.Name = "loadingLabel";
-            this.loadingLabel.Padding = new System.Windows.Forms.Padding(215, 235, 215, 235);
-            this.loadingLabel.Size = new System.Drawing.Size(803, 506);
+            this.loadingLabel.Size = new System.Drawing.Size(263, 26);
             this.loadingLabel.TabIndex = 63;
             this.loadingLabel.Text = "Installing apps, please wait...";
-            this.loadingLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.loadingLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.loadingLabel.UseWaitCursor = true;
             this.loadingLabel.Visible = false;
             // 
@@ -827,6 +829,24 @@ namespace ToolBox_by_NaeTech
             this.minimizebtn.UseVisualStyleBackColor = false;
             this.minimizebtn.Click += new System.EventHandler(this.minimizebtn_Click);
             // 
+            // installationProgressBar
+            // 
+            this.installationProgressBar.Location = new System.Drawing.Point(199, 192);
+            this.installationProgressBar.Name = "installationProgressBar";
+            this.installationProgressBar.Size = new System.Drawing.Size(400, 25);
+            this.installationProgressBar.TabIndex = 71;
+            this.installationProgressBar.Visible = false;
+            // 
+            // loadingback
+            // 
+            this.loadingback.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(20)))), ((int)(((byte)(40)))));
+            this.loadingback.Location = new System.Drawing.Point(-2, 44);
+            this.loadingback.Name = "loadingback";
+            this.loadingback.Size = new System.Drawing.Size(804, 456);
+            this.loadingback.TabIndex = 72;
+            this.loadingback.TabStop = false;
+            this.loadingback.Visible = false;
+            // 
             // toolbox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -835,12 +855,14 @@ namespace ToolBox_by_NaeTech
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 500);
+            this.Controls.Add(this.loadingLabel);
+            this.Controls.Add(this.installationProgressBar);
+            this.Controls.Add(this.loadingback);
             this.Controls.Add(this.minimizebtn);
             this.Controls.Add(this.exitbtn);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.loadingLabel);
             this.Controls.Add(this.check4);
             this.Controls.Add(this.check3);
             this.Controls.Add(this.check18);
@@ -903,6 +925,7 @@ namespace ToolBox_by_NaeTech
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loadingback)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -966,5 +989,7 @@ namespace ToolBox_by_NaeTech
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button exitbtn;
         private System.Windows.Forms.Button minimizebtn;
+        private ProgressBar installationProgressBar;
+        private PictureBox loadingback;
     }
 }
