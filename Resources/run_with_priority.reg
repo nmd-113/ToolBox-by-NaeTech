@@ -1,0 +1,51 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\exefile\Shell\RunWithPriority]
+"MUIVerb"="Run with priority"
+"SubCommands"=""
+"Icon"="shell32.dll,-25" 
+
+; Low
+[HKEY_CLASSES_ROOT\exefile\Shell\RunWithPriority\Shell\01Low]
+@="Low"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\RunWithPriority\Shell\01Low\command]
+@="cmd.exe /c start \"\" /Low \"%1\""
+
+; Below normal
+[HKEY_CLASSES_ROOT\exefile\Shell\RunWithPriority\Shell\03BelowNormal]
+@="Below normal"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\RunWithPriority\Shell\03BelowNormal\command]
+@="cmd.exe /c start \"\" /BelowNormal \"%1\""
+
+
+; Normal
+[HKEY_CLASSES_ROOT\exefile\Shell\RunWithPriority\Shell\04Normal]
+@="Normal"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\RunWithPriority\Shell\04Normal\command]
+@="cmd.exe /c start \"\" /Normal \"%1\""
+
+
+; Above Normal
+[HKEY_CLASSES_ROOT\exefile\Shell\RunWithPriority\Shell\05AboveNormal]
+@="Above normal"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\RunWithPriority\Shell\05AboveNormal\command]
+@="cmd.exe /c start \"\" /AboveNormal \"%1\""
+
+
+; High
+[HKEY_CLASSES_ROOT\exefile\Shell\RunWithPriority\Shell\06High]
+@="High"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\RunWithPriority\Shell\06High\command]
+@="cmd.exe /c start \"\" /High \"%1\""
+
+; Realtime
+[HKEY_CLASSES_ROOT\exefile\Shell\RunWithPriority\Shell\07Realtime]
+@="Realtime"
+
+[HKEY_CLASSES_ROOT\exefile\Shell\RunWithPriority\Shell\07Realtime\command]
+@="cmd.exe /c start \"\" /Realtime \"%1\""
