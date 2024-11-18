@@ -76,19 +76,19 @@ namespace ToolBox_by_NaeTech
                 return;
             }
 
-            if (check1.Checked) tasks.Add(() => DownloadAndInstallAsync("K-Lite Mega Codec Pack", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/K-Lite_Codec_Pack_1865_Standard.exe", "/verysilent", results));
-            if (check2.Checked) tasks.Add(() => DownloadAndInstallAsync("VLC Media Player", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/vlc-3.0.21-win64.exe", "/L=1033 /S", results));
-            if (check3.Checked) tasks.Add(() => DownloadAndInstallAsync("7-Zip", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/7z2408-x64.exe", "/S", results));
-            if (check4.Checked) tasks.Add(() => DownloadAndInstallAsync("qBittorrent", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/qbittorrent_5.0.1_x64_setup.exe", "/S", results));
+            if (check1.Checked) tasks.Add(() => DownloadAndInstallAsync("K-Lite Mega Codec Pack", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/K-Lite_Codec_Pack_Standard.exe", "/verysilent", results));
+            if (check2.Checked) tasks.Add(() => DownloadAndInstallAsync("VLC Media Player", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/vlc-win64.exe", "/L=1033 /S", results));
+            if (check3.Checked) tasks.Add(() => DownloadAndInstallAsync("7-Zip", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/7zip-x64.exe", "/S", results));
+            if (check4.Checked) tasks.Add(() => DownloadAndInstallAsync("qBittorrent", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/qbittorrent_x64_setup.exe", "/S", results));
             if (check5.Checked) tasks.Add(() => DownloadAndInstallAsync("Steam", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/SteamSetup.exe", "/S", results));
-            if (check6.Checked) tasks.Add(() => DownloadAndInstallAsync("Epic Games", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/EpicInstaller-15.17.1.msi", "/passive", results));
+            if (check6.Checked) tasks.Add(() => DownloadAndInstallAsync("Epic Games", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/EpicInstaller.msi", "/passive", results));
             if (check7.Checked) tasks.Add(() => DownloadAndInstallAsync("Ubisoft Connect", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/UbisoftConnectInstaller.exe", "/S", results));
             if (check8.Checked) tasks.Add(() => DownloadAndInstallAsync("EA App", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/EAappInstaller.exe", "/S", results));
-            if (check9.Checked) tasks.Add(() => DownloadAndInstallAsync("GOG Galaxy", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/setup_galaxy_2.0.77.22.exe", "/verysilent", results));
+            if (check9.Checked) tasks.Add(() => DownloadAndInstallAsync("GOG Galaxy", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/setup_galaxy.exe", "/verysilent", results));
             if (check10.Checked) tasks.Add(() => DownloadAndInstallAsync("Geforce Now", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/GeForceNOW-release.exe", "/S", results));
             if (check15.Checked) tasks.Add(() => DownloadAndInstallAsync("Chrome Browser", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/ChromeSetup.exe", "/silent /install", results));
-            if (check16.Checked) tasks.Add(() => DownloadAndInstallAsync("Firefox Browser", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/Firefox_Setup_132.0b9.exe", "/S /PreventRebootRequired=true", results));
-            if (check17.Checked) tasks.Add(() => DownloadAndInstallAsync("Opera Browser", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/Opera_114.0.5282.94_Setup_x64.exe", "/silent /allusers=1 /launchopera=0 /setdefaultbrowser=0", results));
+            if (check16.Checked) tasks.Add(() => DownloadAndInstallAsync("Firefox Browser", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/Firefox_Setup.exe", "/S /PreventRebootRequired=true", results));
+            if (check17.Checked) tasks.Add(() => DownloadAndInstallAsync("Opera Browser", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/Opera_Setup_x64.exe", "/silent /allusers=1 /launchopera=0 /setdefaultbrowser=0", results));
             if (check18.Checked) tasks.Add(() => DownloadAndInstallAsync("Brave Browser", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/BraveBrowserStandaloneSilentSetup.exe", "", results));
             if (check11.Checked) tasks.Add(() => DownloadAndInstallAsync("DirectX", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/directx_Jun2010_redist.zip", "", results, true));
             if (check12.Checked) tasks.Add(() => DownloadAndInstallAsync(".Net Runtime 8.0.10", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/windowsdesktop-runtime-8.0.10-win-x64.exe", "/install /quiet /norestart", results));
