@@ -86,14 +86,14 @@ namespace ToolBox_by_NaeTech
             if (check8.Checked) tasks.Add(() => DownloadAndInstallAsync("EA App", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/EAappInstaller.exe", "/S", results));
             if (check9.Checked) tasks.Add(() => DownloadAndInstallAsync("GOG Galaxy", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/setup_galaxy.exe", "/verysilent", results));
             if (check10.Checked) tasks.Add(() => DownloadAndInstallAsync("Geforce Now", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/GeForceNOW-release.exe", "/S", results));
-            if (check15.Checked) tasks.Add(() => DownloadAndInstallAsync("Chrome Browser", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/ChromeSetup.exe", "/silent /install", results));
-            if (check16.Checked) tasks.Add(() => DownloadAndInstallAsync("Firefox Browser", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/Firefox_Setup.exe", "/S /PreventRebootRequired=true", results));
-            if (check17.Checked) tasks.Add(() => DownloadAndInstallAsync("Opera Browser", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/Opera_Setup_x64.exe", "/silent /allusers=1 /launchopera=0 /setdefaultbrowser=0", results));
-            if (check18.Checked) tasks.Add(() => DownloadAndInstallAsync("Brave Browser", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/BraveBrowserStandaloneSilentSetup.exe", "", results));
             if (check11.Checked) tasks.Add(() => DownloadAndInstallAsync("DirectX", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/directx_Jun2010_redist.zip", "", results, true));
             if (check12.Checked) tasks.Add(() => DownloadAndInstallAsync(".Net Runtime 8.0.10", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/windowsdesktop-runtime-8.0.10-win-x64.exe", "/install /quiet /norestart", results));
             if (check13.Checked) tasks.Add(() => DownloadAndInstallAsync("Visual C++ (All-In-One)", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/Visual-C-Runtimes-All-in-One-Oct-2024.zip", "", results, true));
             if (check14.Checked) tasks.Add(() => DownloadAndInstallAsync(".Net Framework 4.8.1", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/NDP481-x86-x64-AllOS-ENU.exe", "/quiet /AcceptEULA /norestart", results));
+            if (check15.Checked) tasks.Add(() => DownloadAndInstallAsync("Chrome Browser", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/ChromeSetup.exe", "/silent /install", results));
+            if (check16.Checked) tasks.Add(() => DownloadAndInstallAsync("Firefox Browser", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/Firefox_Setup.exe", "/S /PreventRebootRequired=true", results));
+            if (check17.Checked) tasks.Add(() => DownloadAndInstallAsync("Opera Browser", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/Opera_Setup_x64.exe", "/silent /allusers=1 /launchopera=0 /setdefaultbrowser=0", results));
+            if (check18.Checked) tasks.Add(() => DownloadAndInstallAsync("Brave Browser", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/BraveBrowserStandaloneSilentSetup.exe", "", results));
 
             foreach (var task in tasks)
             {
