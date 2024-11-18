@@ -160,11 +160,11 @@ namespace ToolBox_by_NaeTech
             // 
             this.check1.AutoSize = true;
             this.check1.BackColor = System.Drawing.Color.Black;
-            this.check1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.check1.ForeColor = System.Drawing.Color.White;
             this.check1.Location = new System.Drawing.Point(20, 139);
             this.check1.Name = "check1";
-            this.check1.Size = new System.Drawing.Size(135, 20);
+            this.check1.Size = new System.Drawing.Size(142, 20);
             this.check1.TabIndex = 7;
             this.check1.Text = "K-Lite Codec Pack";
             this.check1.UseVisualStyleBackColor = false;
@@ -173,11 +173,11 @@ namespace ToolBox_by_NaeTech
             // 
             this.check2.AutoSize = true;
             this.check2.BackColor = System.Drawing.Color.Black;
-            this.check2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.check2.ForeColor = System.Drawing.Color.White;
             this.check2.Location = new System.Drawing.Point(199, 139);
             this.check2.Name = "check2";
-            this.check2.Size = new System.Drawing.Size(129, 20);
+            this.check2.Size = new System.Drawing.Size(140, 20);
             this.check2.TabIndex = 8;
             this.check2.Text = "VLC media player";
             this.check2.UseVisualStyleBackColor = false;
@@ -199,11 +199,11 @@ namespace ToolBox_by_NaeTech
             // 
             this.check5.AutoSize = true;
             this.check5.BackColor = System.Drawing.Color.Black;
-            this.check5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.check5.ForeColor = System.Drawing.Color.White;
             this.check5.Location = new System.Drawing.Point(20, 212);
             this.check5.Name = "check5";
-            this.check5.Size = new System.Drawing.Size(64, 20);
+            this.check5.Size = new System.Drawing.Size(67, 20);
             this.check5.TabIndex = 10;
             this.check5.Text = "Steam";
             this.check5.UseVisualStyleBackColor = false;
@@ -212,11 +212,11 @@ namespace ToolBox_by_NaeTech
             // 
             this.check6.AutoSize = true;
             this.check6.BackColor = System.Drawing.Color.Black;
-            this.check6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.check6.ForeColor = System.Drawing.Color.White;
             this.check6.Location = new System.Drawing.Point(199, 212);
             this.check6.Name = "check6";
-            this.check6.Size = new System.Drawing.Size(98, 20);
+            this.check6.Size = new System.Drawing.Size(101, 20);
             this.check6.TabIndex = 11;
             this.check6.Text = "Epic Games";
             this.check6.UseVisualStyleBackColor = false;
@@ -225,11 +225,11 @@ namespace ToolBox_by_NaeTech
             // 
             this.check7.AutoSize = true;
             this.check7.BackColor = System.Drawing.Color.Black;
-            this.check7.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check7.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.check7.ForeColor = System.Drawing.Color.White;
             this.check7.Location = new System.Drawing.Point(20, 238);
             this.check7.Name = "check7";
-            this.check7.Size = new System.Drawing.Size(118, 20);
+            this.check7.Size = new System.Drawing.Size(125, 20);
             this.check7.TabIndex = 12;
             this.check7.Text = "Ubisoft Connect";
             this.check7.UseVisualStyleBackColor = false;
@@ -238,11 +238,11 @@ namespace ToolBox_by_NaeTech
             // 
             this.check8.AutoSize = true;
             this.check8.BackColor = System.Drawing.Color.Black;
-            this.check8.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check8.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.check8.ForeColor = System.Drawing.Color.White;
             this.check8.Location = new System.Drawing.Point(199, 238);
             this.check8.Name = "check8";
-            this.check8.Size = new System.Drawing.Size(68, 20);
+            this.check8.Size = new System.Drawing.Size(71, 20);
             this.check8.TabIndex = 13;
             this.check8.Text = "EA app";
             this.check8.UseVisualStyleBackColor = false;
@@ -251,11 +251,11 @@ namespace ToolBox_by_NaeTech
             // 
             this.check9.AutoSize = true;
             this.check9.BackColor = System.Drawing.Color.Black;
-            this.check9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.check9.ForeColor = System.Drawing.Color.White;
             this.check9.Location = new System.Drawing.Point(20, 264);
             this.check9.Name = "check9";
-            this.check9.Size = new System.Drawing.Size(101, 20);
+            this.check9.Size = new System.Drawing.Size(105, 20);
             this.check9.TabIndex = 14;
             this.check9.Text = "GOG Galaxy";
             this.check9.UseVisualStyleBackColor = false;
@@ -264,11 +264,11 @@ namespace ToolBox_by_NaeTech
             // 
             this.check10.AutoSize = true;
             this.check10.BackColor = System.Drawing.Color.Black;
-            this.check10.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check10.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.check10.ForeColor = System.Drawing.Color.White;
             this.check10.Location = new System.Drawing.Point(200, 264);
             this.check10.Name = "check10";
-            this.check10.Size = new System.Drawing.Size(100, 20);
+            this.check10.Size = new System.Drawing.Size(108, 20);
             this.check10.TabIndex = 15;
             this.check10.Text = "Geforce Now";
             this.check10.UseVisualStyleBackColor = false;
@@ -290,11 +290,11 @@ namespace ToolBox_by_NaeTech
             // 
             this.check11.AutoSize = true;
             this.check11.BackColor = System.Drawing.Color.Black;
-            this.check11.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check11.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.check11.ForeColor = System.Drawing.Color.White;
             this.check11.Location = new System.Drawing.Point(21, 312);
             this.check11.Name = "check11";
-            this.check11.Size = new System.Drawing.Size(67, 20);
+            this.check11.Size = new System.Drawing.Size(72, 20);
             this.check11.TabIndex = 17;
             this.check11.Text = "DirectX";
             this.check11.UseVisualStyleBackColor = false;
@@ -303,11 +303,11 @@ namespace ToolBox_by_NaeTech
             // 
             this.check13.AutoSize = true;
             this.check13.BackColor = System.Drawing.Color.Black;
-            this.check13.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check13.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.check13.ForeColor = System.Drawing.Color.White;
             this.check13.Location = new System.Drawing.Point(21, 338);
             this.check13.Name = "check13";
-            this.check13.Size = new System.Drawing.Size(118, 20);
+            this.check13.Size = new System.Drawing.Size(123, 20);
             this.check13.TabIndex = 18;
             this.check13.Text = "Visual C++ (All)";
             this.check13.UseVisualStyleBackColor = false;
@@ -316,11 +316,11 @@ namespace ToolBox_by_NaeTech
             // 
             this.check12.AutoSize = true;
             this.check12.BackColor = System.Drawing.Color.Black;
-            this.check12.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check12.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.check12.ForeColor = System.Drawing.Color.White;
             this.check12.Location = new System.Drawing.Point(200, 312);
             this.check12.Name = "check12";
-            this.check12.Size = new System.Drawing.Size(155, 20);
+            this.check12.Size = new System.Drawing.Size(162, 20);
             this.check12.TabIndex = 19;
             this.check12.Text = ".NET Runtime (Latest)";
             this.check12.UseVisualStyleBackColor = false;
@@ -329,11 +329,11 @@ namespace ToolBox_by_NaeTech
             // 
             this.check14.AutoSize = true;
             this.check14.BackColor = System.Drawing.Color.Black;
-            this.check14.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check14.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.check14.ForeColor = System.Drawing.Color.White;
             this.check14.Location = new System.Drawing.Point(200, 338);
             this.check14.Name = "check14";
-            this.check14.Size = new System.Drawing.Size(156, 20);
+            this.check14.Size = new System.Drawing.Size(164, 20);
             this.check14.TabIndex = 20;
             this.check14.Text = ".NET Framework 4.8.1";
             this.check14.UseVisualStyleBackColor = false;
@@ -366,7 +366,7 @@ namespace ToolBox_by_NaeTech
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(684, 115);
             this.button1.Name = "button1";
@@ -380,11 +380,11 @@ namespace ToolBox_by_NaeTech
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Black;
-            this.label9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.Control;
             this.label9.Location = new System.Drawing.Point(425, 118);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(187, 16);
+            this.label9.Size = new System.Drawing.Size(197, 16);
             this.label9.TabIndex = 25;
             this.label9.Text = "Classic Context Menu (Win11):";
             // 
@@ -392,11 +392,11 @@ namespace ToolBox_by_NaeTech
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Black;
-            this.label10.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.Control;
             this.label10.Location = new System.Drawing.Point(425, 152);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(137, 16);
+            this.label10.Size = new System.Drawing.Size(147, 16);
             this.label10.TabIndex = 26;
             this.label10.Text = "Disable Windows Ads:";
             // 
@@ -404,7 +404,7 @@ namespace ToolBox_by_NaeTech
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(684, 149);
             this.button2.Name = "button2";
@@ -418,7 +418,7 @@ namespace ToolBox_by_NaeTech
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(684, 183);
             this.button3.Name = "button3";
@@ -432,11 +432,11 @@ namespace ToolBox_by_NaeTech
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Black;
-            this.label11.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.Control;
             this.label11.Location = new System.Drawing.Point(425, 186);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(212, 16);
+            this.label11.Size = new System.Drawing.Size(229, 16);
             this.label11.TabIndex = 29;
             this.label11.Text = "Disable Web Search in Start Menu:";
             // 
@@ -444,7 +444,7 @@ namespace ToolBox_by_NaeTech
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Location = new System.Drawing.Point(684, 217);
             this.button4.Name = "button4";
@@ -458,11 +458,11 @@ namespace ToolBox_by_NaeTech
             // 
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Black;
-            this.label12.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.Control;
             this.label12.Location = new System.Drawing.Point(425, 220);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(168, 16);
+            this.label12.Size = new System.Drawing.Size(181, 16);
             this.label12.TabIndex = 32;
             this.label12.Text = "Disable Automatic Updates:";
             // 
@@ -470,7 +470,7 @@ namespace ToolBox_by_NaeTech
             // 
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Location = new System.Drawing.Point(684, 251);
             this.button5.Name = "button5";
@@ -484,11 +484,11 @@ namespace ToolBox_by_NaeTech
             // 
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Black;
-            this.label13.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.Control;
             this.label13.Location = new System.Drawing.Point(425, 254);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(154, 16);
+            this.label13.Size = new System.Drawing.Size(164, 16);
             this.label13.TabIndex = 35;
             this.label13.Text = "Optimized Visual Effects:";
             // 
@@ -496,7 +496,7 @@ namespace ToolBox_by_NaeTech
             // 
             this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
             this.button6.Location = new System.Drawing.Point(684, 285);
             this.button6.Name = "button6";
@@ -510,11 +510,11 @@ namespace ToolBox_by_NaeTech
             // 
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Black;
-            this.label14.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.SystemColors.Control;
             this.label14.Location = new System.Drawing.Point(425, 288);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(123, 16);
+            this.label14.Size = new System.Drawing.Size(136, 16);
             this.label14.TabIndex = 38;
             this.label14.Text = "Disable Hibernation:";
             // 
@@ -522,7 +522,7 @@ namespace ToolBox_by_NaeTech
             // 
             this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button8.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.Color.White;
             this.button8.Location = new System.Drawing.Point(684, 353);
             this.button8.Name = "button8";
@@ -536,11 +536,11 @@ namespace ToolBox_by_NaeTech
             // 
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Black;
-            this.label16.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.SystemColors.Control;
             this.label16.Location = new System.Drawing.Point(425, 356);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(221, 16);
+            this.label16.Size = new System.Drawing.Size(241, 16);
             this.label16.TabIndex = 41;
             this.label16.Text = "Enable Windows Photo Viewer (Old):";
             // 
@@ -548,7 +548,7 @@ namespace ToolBox_by_NaeTech
             // 
             this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.Color.White;
             this.button9.Location = new System.Drawing.Point(684, 387);
             this.button9.Name = "button9";
@@ -562,11 +562,11 @@ namespace ToolBox_by_NaeTech
             // 
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.Black;
-            this.label17.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.SystemColors.Control;
             this.label17.Location = new System.Drawing.Point(425, 390);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(169, 16);
+            this.label17.Size = new System.Drawing.Size(181, 16);
             this.label17.TabIndex = 44;
             this.label17.Text = "Disable FSO and GameBar:";
             // 
@@ -574,7 +574,7 @@ namespace ToolBox_by_NaeTech
             // 
             this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button10.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.ForeColor = System.Drawing.Color.White;
             this.button10.Location = new System.Drawing.Point(684, 421);
             this.button10.Name = "button10";
@@ -588,11 +588,11 @@ namespace ToolBox_by_NaeTech
             // 
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Black;
-            this.label18.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.SystemColors.Control;
             this.label18.Location = new System.Drawing.Point(425, 424);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(169, 16);
+            this.label18.Size = new System.Drawing.Size(182, 16);
             this.label18.TabIndex = 47;
             this.label18.Text = "Enable DirectPlay (Legacy):";
             // 
@@ -600,7 +600,7 @@ namespace ToolBox_by_NaeTech
             // 
             this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button7.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.White;
             this.button7.Location = new System.Drawing.Point(684, 319);
             this.button7.Name = "button7";
@@ -614,11 +614,11 @@ namespace ToolBox_by_NaeTech
             // 
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Black;
-            this.label15.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.SystemColors.Control;
             this.label15.Location = new System.Drawing.Point(425, 322);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(233, 16);
+            this.label15.Size = new System.Drawing.Size(257, 16);
             this.label15.TabIndex = 50;
             this.label15.Text = "Add Ultimate Performance Power Plan:";
             // 
@@ -626,7 +626,7 @@ namespace ToolBox_by_NaeTech
             // 
             this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button11.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button11.ForeColor = System.Drawing.Color.White;
             this.button11.Location = new System.Drawing.Point(684, 455);
             this.button11.Name = "button11";
@@ -640,11 +640,11 @@ namespace ToolBox_by_NaeTech
             // 
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.Black;
-            this.label19.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.SystemColors.Control;
             this.label19.Location = new System.Drawing.Point(425, 458);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(216, 16);
+            this.label19.Size = new System.Drawing.Size(237, 16);
             this.label19.TabIndex = 53;
             this.label19.Text = "Add Run with Priority context menu:";
             // 
@@ -652,11 +652,11 @@ namespace ToolBox_by_NaeTech
             // 
             this.check16.AutoSize = true;
             this.check16.BackColor = System.Drawing.Color.Black;
-            this.check16.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check16.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.check16.ForeColor = System.Drawing.Color.White;
             this.check16.Location = new System.Drawing.Point(200, 387);
             this.check16.Name = "check16";
-            this.check16.Size = new System.Drawing.Size(65, 20);
+            this.check16.Size = new System.Drawing.Size(71, 20);
             this.check16.TabIndex = 58;
             this.check16.Text = "Firefox";
             this.check16.UseVisualStyleBackColor = false;
@@ -665,11 +665,11 @@ namespace ToolBox_by_NaeTech
             // 
             this.check15.AutoSize = true;
             this.check15.BackColor = System.Drawing.Color.Black;
-            this.check15.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check15.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.check15.ForeColor = System.Drawing.Color.White;
             this.check15.Location = new System.Drawing.Point(21, 387);
             this.check15.Name = "check15";
-            this.check15.Size = new System.Drawing.Size(71, 20);
+            this.check15.Size = new System.Drawing.Size(76, 20);
             this.check15.TabIndex = 57;
             this.check15.Text = "Chrome";
             this.check15.UseVisualStyleBackColor = false;
@@ -691,11 +691,11 @@ namespace ToolBox_by_NaeTech
             // 
             this.check18.AutoSize = true;
             this.check18.BackColor = System.Drawing.Color.Black;
-            this.check18.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check18.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.check18.ForeColor = System.Drawing.Color.White;
             this.check18.Location = new System.Drawing.Point(200, 412);
             this.check18.Name = "check18";
-            this.check18.Size = new System.Drawing.Size(58, 20);
+            this.check18.Size = new System.Drawing.Size(63, 20);
             this.check18.TabIndex = 60;
             this.check18.Text = "Brave";
             this.check18.UseVisualStyleBackColor = false;
@@ -704,11 +704,11 @@ namespace ToolBox_by_NaeTech
             // 
             this.check17.AutoSize = true;
             this.check17.BackColor = System.Drawing.Color.Black;
-            this.check17.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check17.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.check17.ForeColor = System.Drawing.Color.White;
             this.check17.Location = new System.Drawing.Point(21, 412);
             this.check17.Name = "check17";
-            this.check17.Size = new System.Drawing.Size(61, 20);
+            this.check17.Size = new System.Drawing.Size(65, 20);
             this.check17.TabIndex = 59;
             this.check17.Text = "Opera";
             this.check17.UseVisualStyleBackColor = false;
@@ -717,11 +717,11 @@ namespace ToolBox_by_NaeTech
             // 
             this.check4.AutoSize = true;
             this.check4.BackColor = System.Drawing.Color.Black;
-            this.check4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.check4.ForeColor = System.Drawing.Color.White;
             this.check4.Location = new System.Drawing.Point(199, 164);
             this.check4.Name = "check4";
-            this.check4.Size = new System.Drawing.Size(86, 20);
+            this.check4.Size = new System.Drawing.Size(93, 20);
             this.check4.TabIndex = 62;
             this.check4.Text = "qBittorrent";
             this.check4.UseVisualStyleBackColor = false;
@@ -730,11 +730,11 @@ namespace ToolBox_by_NaeTech
             // 
             this.check3.AutoSize = true;
             this.check3.BackColor = System.Drawing.Color.Black;
-            this.check3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.check3.ForeColor = System.Drawing.Color.White;
             this.check3.Location = new System.Drawing.Point(20, 164);
             this.check3.Name = "check3";
-            this.check3.Size = new System.Drawing.Size(54, 20);
+            this.check3.Size = new System.Drawing.Size(56, 20);
             this.check3.TabIndex = 61;
             this.check3.Text = "7-Zip";
             this.check3.UseVisualStyleBackColor = false;
@@ -782,7 +782,7 @@ namespace ToolBox_by_NaeTech
             this.label20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(20)))), ((int)(((byte)(40)))));
             this.label20.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(294, 12);
+            this.label20.Location = new System.Drawing.Point(297, 13);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(210, 22);
             this.label20.TabIndex = 67;
@@ -804,7 +804,7 @@ namespace ToolBox_by_NaeTech
             this.exitbtn.BackColor = System.Drawing.Color.Crimson;
             this.exitbtn.FlatAppearance.BorderSize = 0;
             this.exitbtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.exitbtn.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitbtn.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitbtn.ForeColor = System.Drawing.Color.White;
             this.exitbtn.Location = new System.Drawing.Point(707, 10);
             this.exitbtn.Name = "exitbtn";
@@ -819,7 +819,7 @@ namespace ToolBox_by_NaeTech
             this.minimizebtn.BackColor = System.Drawing.Color.Crimson;
             this.minimizebtn.FlatAppearance.BorderSize = 0;
             this.minimizebtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.minimizebtn.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minimizebtn.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minimizebtn.ForeColor = System.Drawing.Color.White;
             this.minimizebtn.Location = new System.Drawing.Point(620, 10);
             this.minimizebtn.Name = "minimizebtn";
