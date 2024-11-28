@@ -1,8 +1,8 @@
 # ToolBox by NaeTech
 
-Changelog - ToolBox by NaeTech - Version 1.0
+ToolBox by NaeTech
 
-Initial Release: A minimalist app for quick installation of utilities, media players, browsers, gaming platforms, and system tweaks.
+A minimalist app for quick installation of utilities, media players, browsers, gaming platforms, and system tweaks.
 Key Features:
 Install apps like VLC, 7-Zip, Steam, and Chrome with a single click.
 Apply system optimizations such as disabling Windows ads, automatic updates, and enabling legacy features.
