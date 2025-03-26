@@ -1,4 +1,5 @@
-#ToolBox Remastered
+# ToolBox Remastered
+
 ToolBox Remastered is a refreshed version of the original ToolBox by NaeTech. It keeps all the features that made the original great while introducing improvements to make it even easier to use and more effective. Whether you're installing apps or tweaking your system, ToolBox Remastered is here to help.
 
 What's New in the Remastered Version:
