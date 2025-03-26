@@ -1,0 +1,26 @@
+Windows Registry Editor Version 5.00
+
+; Completely disable automatic updates
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
+"NoAutoUpdate"=dword:00000001
+
+; Ensure drivers remain enabled for updates
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\WindowsUpdate\UX\Settings]
+"ExcludeWUDriversInQualityUpdate"=dword:00000000
+
+; Prevent Windows Update settings from being re-enabled
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate]
+"DisableOSUpgrade"=dword:00000001
+"AUOptions"=dword:00000001
+
+; Disable the Windows Update Medic Service (prevents re-enabling updates)
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WaaSMedicSvc]
+"Start"=dword:00000004
+
+; Disable Update Orchestrator Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UsoSvc]
+"Start"=dword:00000004
+
+; Disable the ability to reset settings
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoWindowsUpdate"=dword:00000001

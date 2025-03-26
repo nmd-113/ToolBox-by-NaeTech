@@ -1,0 +1,28 @@
+Windows Registry Editor Version 5.00
+
+; Disable Fullscreen Optimizations
+[HKEY_CURRENT_USER\System\GameConfigStore]
+"GameDVR_FSEBehaviorMode"=dword:00000002
+"GameDVR_HonorUserFSEBehaviorMode"=dword:00000001
+
+; Disable Game Bar
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\GameDVR]
+"AppCaptureEnabled"=dword:00000000
+
+[HKEY_CURRENT_USER\System\GameConfigStore]
+"GameDVR_Enabled"=dword:00000000
+
+; Disable ms-gamebar popup
+[HKEY_CLASSES_ROOT\ms-gamebar]
+@=""
+"NoOpenWith"=""
+
+[HKEY_CLASSES_ROOT\ms-gamebar\shell\open\command]
+@="\"\""
+
+[HKEY_CLASSES_ROOT\ms-gamebarservices]
+@=""
+"NoOpenWith"=""
+
+[HKEY_CLASSES_ROOT\ms-gamebarservices\shell\open\command]
+@="\"\""

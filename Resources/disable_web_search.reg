@@ -1,0 +1,40 @@
+Windows Registry Editor Version 5.00
+
+; Disable web search and Cortana globally
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Search]
+"ConnectedSearchUseWebOverMeteredConnections"=dword:00000000
+"AllowCortana"=dword:00000000
+"DisableWebSearch"=dword:00000001
+"ConnectedSearchUseWeb"=dword:00000000
+
+; Disable Bing integration and location usage for the current user
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search]
+"CortanaConsent"=dword:00000000
+"BingSearchEnabled"=dword:00000000
+"AllowSearchToUseLocation"=dword:00000000
+
+; Disable Search Highlights (illustrations and ads in search box)
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\Explorer]
+"DisableSearchBoxSuggestions"=dword:00000001
+"EnableDynamicContentInWSB"=dword:00000000
+
+; Disable taskbar search animations (Windows 10/11)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Search]
+"EnableSearchAutoComplete"=dword:00000000
+
+; Remove location-based recommendations and suggestions in Windows Search
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Privacy]
+"LetAppsAccessLocation"=dword:00000000
+"LocationEnabled"=dword:00000000
+
+; Disable Windows Search feedback prompts
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search]
+"ShowSearchSuggestionsGlobal"=dword:00000000
+
+; Disable personalized search results (based on usage or preferences)
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search]
+"PersonalizationEnabled"=dword:00000000
+
+; Ensure Cortana and all related features are fully disabled
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CloudContent]
+"DisableCortana"=dword:00000001
