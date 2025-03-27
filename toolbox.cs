@@ -29,8 +29,9 @@ namespace ToolBOX_Remastered
             top_bar.MouseUp += new MouseEventHandler(top_bar_MouseUp);
 
             // TOOLTIPS
-            toolTip1.SetToolTip(this.cb_office, "Includes only Word, Excel, and PowerPoint, without any additional bloatware.");
-            toolTip1.SetToolTip(this.cb_vcplus, "Includes all Microsoft Visual C++ Redistributables (2005-2022).");
+            toolTip1.SetToolTip(this.tip1, "Includes all Microsoft Visual C++ Redistributables (2005-2022).");
+            toolTip1.SetToolTip(this.tip2, "Includes all Microsoft .NET Runtime versions (v3.0.3-v8.0.4).");
+            toolTip1.SetToolTip(this.tip3, "A slimmed-down version of Office, including only Word, Excell and Powerpoint.");
         }
 
         private Size originalSizeInstallerIcon;
@@ -275,7 +276,7 @@ namespace ToolBOX_Remastered
                 if (cb_acrobat.Checked) tasks.Add(() => DownloadAndInstallAsync("Adobe Acrobat Reader", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/AcroRdrDC_en_US.exe", "/sAll /rs /msi EULA_ACCEPT=YES", results));
 
                 if (cb_dx.Checked) tasks.Add(() => DownloadAndInstallAsync("DirectX", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/directx_Jun2010_redist.zip", "", results, true));
-                if (cb_netrun.Checked) tasks.Add(() => DownloadAndInstallAsync(".Net Runtime 8.0.10", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/windowsdesktop-runtime-8.0.10-win-x64.exe", "/install /quiet /norestart", results));
+                if (cb_netrun.Checked) tasks.Add(() => DownloadAndInstallAsync(".Net Runtime All", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/NET-Runtimes-AIO.zip", "", results, true));
                 if (cb_vcplus.Checked) tasks.Add(() => DownloadAndInstallAsync("Visual C++ All", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/Visual-C-Runtimes-All-in-One.zip", "", results, true));
                 if (cb_netframe.Checked) tasks.Add(() => DownloadAndInstallAsync(".Net Framework 4.8.1", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/NDP481-x86-x64-AllOS-ENU.exe", "/quiet /AcceptEULA /norestart", results));
 
@@ -336,6 +337,10 @@ namespace ToolBOX_Remastered
                     if (appName == "Visual C++ All")
                     {
                         fileName = Path.Combine(extractedPath, "install_all.bat");
+                    }
+                    if (appName == ".Net Runtime All")
+                    {
+                        fileName = Path.Combine(extractedPath, "NETRuntime\\SilentSetup.bat");
                     }
                     else if (appName == "DirectX")
                     {

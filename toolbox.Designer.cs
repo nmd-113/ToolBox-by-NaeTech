@@ -81,6 +81,8 @@ namespace ToolBOX_Remastered
             this.internet_txt = new System.Windows.Forms.Label();
             this.sidebar_installer = new System.Windows.Forms.PictureBox();
             this.windows_tweaker = new System.Windows.Forms.Panel();
+            this.button15 = new System.Windows.Forms.Button();
+            this.label18 = new System.Windows.Forms.Label();
             this.button14 = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -118,8 +120,9 @@ namespace ToolBOX_Remastered
             this.naetech = new System.Windows.Forms.PictureBox();
             this.top_bar = new System.Windows.Forms.PictureBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.button15 = new System.Windows.Forms.Button();
-            this.label18 = new System.Windows.Forms.Label();
+            this.tip1 = new System.Windows.Forms.Label();
+            this.tip2 = new System.Windows.Forms.Label();
+            this.tip3 = new System.Windows.Forms.Label();
             this.side_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tweaker_icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.installer_icon)).BeginInit();
@@ -285,6 +288,9 @@ namespace ToolBOX_Remastered
             // quick_installer
             // 
             this.quick_installer.BackColor = System.Drawing.Color.Transparent;
+            this.quick_installer.Controls.Add(this.tip3);
+            this.quick_installer.Controls.Add(this.tip2);
+            this.quick_installer.Controls.Add(this.tip1);
             this.quick_installer.Controls.Add(this.loadinglabel);
             this.quick_installer.Controls.Add(this.installer_txt2);
             this.quick_installer.Controls.Add(this.progressbar);
@@ -320,6 +326,7 @@ namespace ToolBOX_Remastered
             this.quick_installer.Controls.Add(this.gaming_txt);
             this.quick_installer.Controls.Add(this.internet_txt);
             this.quick_installer.Controls.Add(this.sidebar_installer);
+            this.quick_installer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quick_installer.Location = new System.Drawing.Point(178, 59);
             this.quick_installer.Name = "quick_installer";
             this.quick_installer.Size = new System.Drawing.Size(622, 541);
@@ -386,7 +393,7 @@ namespace ToolBOX_Remastered
             this.cb_acrobat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cb_acrobat.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_acrobat.ForeColor = System.Drawing.Color.White;
-            this.cb_acrobat.Location = new System.Drawing.Point(272, 318);
+            this.cb_acrobat.Location = new System.Drawing.Point(292, 318);
             this.cb_acrobat.Margin = new System.Windows.Forms.Padding(5);
             this.cb_acrobat.Name = "cb_acrobat";
             this.cb_acrobat.Size = new System.Drawing.Size(152, 19);
@@ -405,12 +412,12 @@ namespace ToolBOX_Remastered
             this.cb_office.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cb_office.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_office.ForeColor = System.Drawing.Color.White;
-            this.cb_office.Location = new System.Drawing.Point(272, 295);
+            this.cb_office.Location = new System.Drawing.Point(292, 295);
             this.cb_office.Margin = new System.Windows.Forms.Padding(5);
             this.cb_office.Name = "cb_office";
-            this.cb_office.Size = new System.Drawing.Size(147, 19);
+            this.cb_office.Size = new System.Drawing.Size(150, 19);
             this.cb_office.TabIndex = 118;
-            this.cb_office.Text = "MS Office 2021 (*Lite)";
+            this.cb_office.Text = "MS Office 2021 (*Slim)";
             this.cb_office.UseVisualStyleBackColor = false;
             // 
             // cb_gear
@@ -497,7 +504,7 @@ namespace ToolBOX_Remastered
             this.cb_qbit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cb_qbit.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_qbit.ForeColor = System.Drawing.Color.White;
-            this.cb_qbit.Location = new System.Drawing.Point(272, 81);
+            this.cb_qbit.Location = new System.Drawing.Point(292, 81);
             this.cb_qbit.Margin = new System.Windows.Forms.Padding(5);
             this.cb_qbit.Name = "cb_qbit";
             this.cb_qbit.Size = new System.Drawing.Size(90, 19);
@@ -554,7 +561,7 @@ namespace ToolBOX_Remastered
             this.cb_opera.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cb_opera.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_opera.ForeColor = System.Drawing.Color.White;
-            this.cb_opera.Location = new System.Drawing.Point(272, 231);
+            this.cb_opera.Location = new System.Drawing.Point(292, 231);
             this.cb_opera.Margin = new System.Windows.Forms.Padding(5);
             this.cb_opera.Name = "cb_opera";
             this.cb_opera.Size = new System.Drawing.Size(60, 19);
@@ -573,7 +580,7 @@ namespace ToolBOX_Remastered
             this.cb_firefox.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cb_firefox.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_firefox.ForeColor = System.Drawing.Color.White;
-            this.cb_firefox.Location = new System.Drawing.Point(272, 253);
+            this.cb_firefox.Location = new System.Drawing.Point(292, 253);
             this.cb_firefox.Margin = new System.Windows.Forms.Padding(5);
             this.cb_firefox.Name = "cb_firefox";
             this.cb_firefox.Size = new System.Drawing.Size(66, 19);
@@ -611,7 +618,7 @@ namespace ToolBOX_Remastered
             this.cb_netframe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cb_netframe.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_netframe.ForeColor = System.Drawing.Color.White;
-            this.cb_netframe.Location = new System.Drawing.Point(272, 383);
+            this.cb_netframe.Location = new System.Drawing.Point(292, 383);
             this.cb_netframe.Margin = new System.Windows.Forms.Padding(5);
             this.cb_netframe.Name = "cb_netframe";
             this.cb_netframe.Size = new System.Drawing.Size(146, 19);
@@ -630,12 +637,12 @@ namespace ToolBOX_Remastered
             this.cb_netrun.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cb_netrun.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_netrun.ForeColor = System.Drawing.Color.White;
-            this.cb_netrun.Location = new System.Drawing.Point(272, 360);
+            this.cb_netrun.Location = new System.Drawing.Point(292, 360);
             this.cb_netrun.Margin = new System.Windows.Forms.Padding(5);
             this.cb_netrun.Name = "cb_netrun";
             this.cb_netrun.Size = new System.Drawing.Size(137, 19);
             this.cb_netrun.TabIndex = 103;
-            this.cb_netrun.Text = ".NET Runtime 8.0.10";
+            this.cb_netrun.Text = ".NET Runtime (*All)";
             this.cb_netrun.UseVisualStyleBackColor = false;
             // 
             // cb_vcplus
@@ -700,7 +707,7 @@ namespace ToolBOX_Remastered
             this.cb_gfn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cb_gfn.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_gfn.ForeColor = System.Drawing.Color.White;
-            this.cb_gfn.Location = new System.Drawing.Point(429, 188);
+            this.cb_gfn.Location = new System.Drawing.Point(449, 188);
             this.cb_gfn.Margin = new System.Windows.Forms.Padding(5);
             this.cb_gfn.Name = "cb_gfn";
             this.cb_gfn.Size = new System.Drawing.Size(100, 19);
@@ -738,7 +745,7 @@ namespace ToolBOX_Remastered
             this.cb_ea.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cb_ea.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_ea.ForeColor = System.Drawing.Color.White;
-            this.cb_ea.Location = new System.Drawing.Point(429, 166);
+            this.cb_ea.Location = new System.Drawing.Point(449, 166);
             this.cb_ea.Margin = new System.Windows.Forms.Padding(5);
             this.cb_ea.Name = "cb_ea";
             this.cb_ea.Size = new System.Drawing.Size(64, 19);
@@ -757,7 +764,7 @@ namespace ToolBOX_Remastered
             this.cb_ubi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cb_ubi.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_ubi.ForeColor = System.Drawing.Color.White;
-            this.cb_ubi.Location = new System.Drawing.Point(272, 188);
+            this.cb_ubi.Location = new System.Drawing.Point(292, 188);
             this.cb_ubi.Margin = new System.Windows.Forms.Padding(5);
             this.cb_ubi.Name = "cb_ubi";
             this.cb_ubi.Size = new System.Drawing.Size(116, 19);
@@ -776,7 +783,7 @@ namespace ToolBOX_Remastered
             this.cb_epic.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cb_epic.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_epic.ForeColor = System.Drawing.Color.White;
-            this.cb_epic.Location = new System.Drawing.Point(272, 166);
+            this.cb_epic.Location = new System.Drawing.Point(292, 166);
             this.cb_epic.Margin = new System.Windows.Forms.Padding(5);
             this.cb_epic.Name = "cb_epic";
             this.cb_epic.Size = new System.Drawing.Size(89, 19);
@@ -833,7 +840,7 @@ namespace ToolBOX_Remastered
             this.cb_klite.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cb_klite.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_klite.ForeColor = System.Drawing.Color.White;
-            this.cb_klite.Location = new System.Drawing.Point(272, 123);
+            this.cb_klite.Location = new System.Drawing.Point(292, 123);
             this.cb_klite.Margin = new System.Windows.Forms.Padding(5);
             this.cb_klite.Name = "cb_klite";
             this.cb_klite.Size = new System.Drawing.Size(100, 19);
@@ -950,6 +957,33 @@ namespace ToolBOX_Remastered
             this.windows_tweaker.Name = "windows_tweaker";
             this.windows_tweaker.Size = new System.Drawing.Size(622, 541);
             this.windows_tweaker.TabIndex = 0;
+            // 
+            // button15
+            // 
+            this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
+            this.button15.FlatAppearance.BorderSize = 0;
+            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button15.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button15.ForeColor = System.Drawing.Color.White;
+            this.button15.Location = new System.Drawing.Point(517, 402);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(74, 23);
+            this.button15.TabIndex = 157;
+            this.button15.Text = "APPLY";
+            this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(15)))), ((int)(((byte)(20)))));
+            this.label18.Font = new System.Drawing.Font("Candara", 9F, System.Drawing.FontStyle.Bold);
+            this.label18.ForeColor = System.Drawing.SystemColors.Control;
+            this.label18.Location = new System.Drawing.Point(340, 406);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(137, 14);
+            this.label18.TabIndex = 156;
+            this.label18.Text = "Disable Weather Widget:";
             // 
             // button14
             // 
@@ -1421,35 +1455,43 @@ namespace ToolBOX_Remastered
             // toolTip1
             // 
             this.toolTip1.AutoPopDelay = 5000;
+            this.toolTip1.BackColor = System.Drawing.Color.White;
             this.toolTip1.InitialDelay = 300;
+            this.toolTip1.IsBalloon = true;
             this.toolTip1.ReshowDelay = 100;
             // 
-            // button15
+            // tip1
             // 
-            this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
-            this.button15.FlatAppearance.BorderSize = 0;
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.ForeColor = System.Drawing.Color.White;
-            this.button15.Location = new System.Drawing.Point(517, 402);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(74, 23);
-            this.button15.TabIndex = 157;
-            this.button15.Text = "APPLY";
-            this.button15.UseVisualStyleBackColor = false;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
+            this.tip1.AutoSize = true;
+            this.tip1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tip1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.tip1.Location = new System.Drawing.Point(255, 382);
+            this.tip1.Name = "tip1";
+            this.tip1.Size = new System.Drawing.Size(18, 20);
+            this.tip1.TabIndex = 124;
+            this.tip1.Text = "?";
             // 
-            // label18
+            // tip2
             // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(15)))), ((int)(((byte)(20)))));
-            this.label18.Font = new System.Drawing.Font("Candara", 9F, System.Drawing.FontStyle.Bold);
-            this.label18.ForeColor = System.Drawing.SystemColors.Control;
-            this.label18.Location = new System.Drawing.Point(340, 406);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(137, 14);
-            this.label18.TabIndex = 156;
-            this.label18.Text = "Disable Weather Widget:";
+            this.tip2.AutoSize = true;
+            this.tip2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tip2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.tip2.Location = new System.Drawing.Point(434, 359);
+            this.tip2.Name = "tip2";
+            this.tip2.Size = new System.Drawing.Size(18, 20);
+            this.tip2.TabIndex = 125;
+            this.tip2.Text = "?";
+            // 
+            // tip3
+            // 
+            this.tip3.AutoSize = true;
+            this.tip3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tip3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.tip3.Location = new System.Drawing.Point(447, 294);
+            this.tip3.Name = "tip3";
+            this.tip3.Size = new System.Drawing.Size(18, 20);
+            this.tip3.TabIndex = 126;
+            this.tip3.Text = "?";
             // 
             // toolbox
             // 
@@ -1587,6 +1629,9 @@ namespace ToolBOX_Remastered
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label tip1;
+        private System.Windows.Forms.Label tip2;
+        private System.Windows.Forms.Label tip3;
     }
 }
 
