@@ -30,7 +30,7 @@ Why ToolBox Remastered?
 
 How to Use:
 
-- Download the installer for ToolBox Remastered.
+- Download the app.
 
 - Run the app, choose what you need, and let it work its magic.
 
