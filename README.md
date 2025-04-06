@@ -6,15 +6,15 @@ What's New in the Remastered Version:
 
 - Updated Interface: A cleaner, more modern look that’s easy to navigate.
 
-- New Productivity Apps: Added useful programs like LibreOffice, PDF Gear, and MS Office Slim.
+- New Productivity Apps: Added useful programs like LibreOffice, PDF Gear, and MS Office.
 
 - Improved Speed and Stability: Optimized for a smoother experience.
 
 - Silent Installation: Install apps faster, with fewer steps.
 
-# All the Original Features, Still Here!
+# All the Initial Features, Still Here!
 
-ToolBox Remastered builds on the solid foundation of the original ToolBox. It still includes:
+ToolBox Remastered builds on the foundation of the initial ToolBox. It still includes:
 
 - Quick Apps Installer: Install tools like 7-Zip, VLC Media Player, Steam, and more with a single click.
 
