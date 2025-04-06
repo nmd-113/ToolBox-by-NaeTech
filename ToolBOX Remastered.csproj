@@ -118,7 +118,7 @@
     <EmbeddedResource Include="Resources\optimized_visual_effects.reg" />
     <EmbeddedResource Include="Resources\run_with_priority.reg" />
     <EmbeddedResource Include="Resources\old_context_menu.reg" />
-    <EmbeddedResource Include="Resources\disable_fso_gamebar.reg" />
+    <EmbeddedResource Include="Resources\disable_gamebar.reg" />
     <EmbeddedResource Include="Resources\disable-drivers-auto-update.reg" />
     <EmbeddedResource Include="Resources\uninstall-copilot.bat" />
     <EmbeddedResource Include="Resources\disable-weather.bat" />

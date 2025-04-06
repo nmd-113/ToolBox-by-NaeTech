@@ -45,6 +45,9 @@ namespace ToolBOX_Remastered
             this.donate_icon = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.quick_installer = new System.Windows.Forms.Panel();
+            this.tip3 = new System.Windows.Forms.Label();
+            this.tip2 = new System.Windows.Forms.Label();
+            this.tip1 = new System.Windows.Forms.Label();
             this.loadinglabel = new System.Windows.Forms.Label();
             this.installer_txt2 = new System.Windows.Forms.Label();
             this.progressbar = new System.Windows.Forms.ProgressBar();
@@ -62,7 +65,6 @@ namespace ToolBOX_Remastered
             this.cb_opera = new System.Windows.Forms.CheckBox();
             this.cb_firefox = new System.Windows.Forms.CheckBox();
             this.cb_chrome = new System.Windows.Forms.CheckBox();
-            this.cb_netframe = new System.Windows.Forms.CheckBox();
             this.cb_netrun = new System.Windows.Forms.CheckBox();
             this.cb_vcplus = new System.Windows.Forms.CheckBox();
             this.cb_dx = new System.Windows.Forms.CheckBox();
@@ -120,9 +122,6 @@ namespace ToolBOX_Remastered
             this.naetech = new System.Windows.Forms.PictureBox();
             this.top_bar = new System.Windows.Forms.PictureBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.tip1 = new System.Windows.Forms.Label();
-            this.tip2 = new System.Windows.Forms.Label();
-            this.tip3 = new System.Windows.Forms.Label();
             this.side_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tweaker_icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.installer_icon)).BeginInit();
@@ -308,7 +307,6 @@ namespace ToolBOX_Remastered
             this.quick_installer.Controls.Add(this.cb_opera);
             this.quick_installer.Controls.Add(this.cb_firefox);
             this.quick_installer.Controls.Add(this.cb_chrome);
-            this.quick_installer.Controls.Add(this.cb_netframe);
             this.quick_installer.Controls.Add(this.cb_netrun);
             this.quick_installer.Controls.Add(this.cb_vcplus);
             this.quick_installer.Controls.Add(this.cb_dx);
@@ -331,6 +329,39 @@ namespace ToolBOX_Remastered
             this.quick_installer.Name = "quick_installer";
             this.quick_installer.Size = new System.Drawing.Size(622, 541);
             this.quick_installer.TabIndex = 75;
+            // 
+            // tip3
+            // 
+            this.tip3.AutoSize = true;
+            this.tip3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tip3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.tip3.Location = new System.Drawing.Point(447, 294);
+            this.tip3.Name = "tip3";
+            this.tip3.Size = new System.Drawing.Size(18, 20);
+            this.tip3.TabIndex = 126;
+            this.tip3.Text = "?";
+            // 
+            // tip2
+            // 
+            this.tip2.AutoSize = true;
+            this.tip2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tip2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.tip2.Location = new System.Drawing.Point(434, 359);
+            this.tip2.Name = "tip2";
+            this.tip2.Size = new System.Drawing.Size(18, 20);
+            this.tip2.TabIndex = 125;
+            this.tip2.Text = "?";
+            // 
+            // tip1
+            // 
+            this.tip1.AutoSize = true;
+            this.tip1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tip1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.tip1.Location = new System.Drawing.Point(255, 382);
+            this.tip1.Name = "tip1";
+            this.tip1.Size = new System.Drawing.Size(18, 20);
+            this.tip1.TabIndex = 124;
+            this.tip1.Text = "?";
             // 
             // loadinglabel
             // 
@@ -606,25 +637,6 @@ namespace ToolBOX_Remastered
             this.cb_chrome.TabIndex = 106;
             this.cb_chrome.Text = "Chrome";
             this.cb_chrome.UseVisualStyleBackColor = false;
-            // 
-            // cb_netframe
-            // 
-            this.cb_netframe.AutoSize = true;
-            this.cb_netframe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(15)))), ((int)(((byte)(20)))));
-            this.cb_netframe.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.cb_netframe.FlatAppearance.BorderSize = 0;
-            this.cb_netframe.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-            this.cb_netframe.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.cb_netframe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cb_netframe.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_netframe.ForeColor = System.Drawing.Color.White;
-            this.cb_netframe.Location = new System.Drawing.Point(292, 383);
-            this.cb_netframe.Margin = new System.Windows.Forms.Padding(5);
-            this.cb_netframe.Name = "cb_netframe";
-            this.cb_netframe.Size = new System.Drawing.Size(146, 19);
-            this.cb_netframe.TabIndex = 104;
-            this.cb_netframe.Text = ".NET Framework 4.8.1";
-            this.cb_netframe.UseVisualStyleBackColor = false;
             // 
             // cb_netrun
             // 
@@ -1203,9 +1215,9 @@ namespace ToolBOX_Remastered
             this.label9.ForeColor = System.Drawing.SystemColors.Control;
             this.label9.Location = new System.Drawing.Point(340, 336);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(144, 14);
+            this.label9.Size = new System.Drawing.Size(98, 14);
             this.label9.TabIndex = 139;
-            this.label9.Text = "Disable FSO and GameBar:";
+            this.label9.Text = "Disable GameBar:";
             // 
             // button8
             // 
@@ -1460,39 +1472,6 @@ namespace ToolBOX_Remastered
             this.toolTip1.IsBalloon = true;
             this.toolTip1.ReshowDelay = 100;
             // 
-            // tip1
-            // 
-            this.tip1.AutoSize = true;
-            this.tip1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tip1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.tip1.Location = new System.Drawing.Point(255, 382);
-            this.tip1.Name = "tip1";
-            this.tip1.Size = new System.Drawing.Size(18, 20);
-            this.tip1.TabIndex = 124;
-            this.tip1.Text = "?";
-            // 
-            // tip2
-            // 
-            this.tip2.AutoSize = true;
-            this.tip2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tip2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.tip2.Location = new System.Drawing.Point(434, 359);
-            this.tip2.Name = "tip2";
-            this.tip2.Size = new System.Drawing.Size(18, 20);
-            this.tip2.TabIndex = 125;
-            this.tip2.Text = "?";
-            // 
-            // tip3
-            // 
-            this.tip3.AutoSize = true;
-            this.tip3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tip3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.tip3.Location = new System.Drawing.Point(447, 294);
-            this.tip3.Name = "tip3";
-            this.tip3.Size = new System.Drawing.Size(18, 20);
-            this.tip3.TabIndex = 126;
-            this.tip3.Text = "?";
-            // 
             // toolbox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -1565,7 +1544,6 @@ namespace ToolBOX_Remastered
         private System.Windows.Forms.CheckBox cb_opera;
         private System.Windows.Forms.CheckBox cb_firefox;
         private System.Windows.Forms.CheckBox cb_chrome;
-        private System.Windows.Forms.CheckBox cb_netframe;
         private System.Windows.Forms.CheckBox cb_netrun;
         private System.Windows.Forms.CheckBox cb_vcplus;
         private System.Windows.Forms.CheckBox cb_dx;

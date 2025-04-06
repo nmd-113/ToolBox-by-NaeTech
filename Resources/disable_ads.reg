@@ -1,11 +1,16 @@
 Windows Registry Editor Version 5.00
 
-; Disable Sync Provider Notifications in File Explorer
+; Disable Lock Screen Ads
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Personalization]
+"NoLockScreen"=dword:00000001
+
+; Disable Suggested Apps in File Explorer
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
 "ShowSyncProviderNotifications"=dword:00000000
 "Start_IrisRecommendations"=dword:00000000
+"ShowFileSyncProviders"=dword:00000000
 
-; Disable Ads, Tips, and Suggestions in Windows Content Delivery Manager
+; Disable Ads, Tips, and Suggestions in Content Delivery Manager
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
 "SubscribedContent-310093Enabled"=dword:00000000
 "RotatingLockScreenOverlayEnabled"=dword:00000000
@@ -31,18 +36,16 @@ Windows Registry Editor Version 5.00
 ; Disable Start Menu and File Explorer Search Suggestions
 [HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\Explorer]
 "DisableSearchBoxSuggestions"=dword:00000001
+"SettingsSuggestionsEnabled"=dword:00000000
 
 ; Disable Bing Integration in Windows Search
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search]
 "BingSearchEnabled"=dword:00000000
 
-; Disable Windows Spotlight Features
+; Disable Spotlight Features
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CloudContent]
 "DisableWindowsSpotlightFeatures"=dword:00000001
-
-; Disable Windows Copilot
-[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\WindowsCopilot]
-"TurnOffWindowsCopilot"=dword:00000001
+"DisableSoftLanding"=dword:00000001
 
 ; Disable Smart Notifications in Action Center
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Notifications\Settings\Windows.ActionCenter.SmartOptOut]
@@ -53,10 +56,14 @@ Windows Registry Editor Version 5.00
 "HubsSidebarEnabled"=dword:00000000
 "WebWidgetAllowed"=dword:00000000
 
-; Disable Suggested Apps in Start Menu
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CloudContent]
-"DisableSoftLanding"=dword:00000001
-
 ; Disable "Meet Now" Taskbar Popup
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
 "HideSCAMeetNow"=dword:00000001
+
+; Remove "Recommended" Section in Windows 11 Start Menu
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Start]
+"DisableRecommendedSection"=dword:00000001
+
+; Disable Feedback Requests
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Feedback]
+"FeedbackFrequency"=dword:00000000

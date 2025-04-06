@@ -278,8 +278,6 @@ namespace ToolBOX_Remastered
                 if (cb_dx.Checked) tasks.Add(() => DownloadAndInstallAsync("DirectX", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/directx_Jun2010_redist.zip", "", results, true));
                 if (cb_netrun.Checked) tasks.Add(() => DownloadAndInstallAsync(".Net Runtime All", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/NET-Runtimes-AIO.zip", "", results, true));
                 if (cb_vcplus.Checked) tasks.Add(() => DownloadAndInstallAsync("Visual C++ All", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/Visual-C-Runtimes-All-in-One.zip", "", results, true));
-                if (cb_netframe.Checked) tasks.Add(() => DownloadAndInstallAsync(".Net Framework 4.8.1", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/NDP481-x86-x64-AllOS-ENU.exe", "/quiet /AcceptEULA /norestart", results));
-
 
                 foreach (var task in tasks)
                 {
@@ -510,9 +508,9 @@ namespace ToolBOX_Remastered
         private async void button9_Click(object sender, EventArgs e)
         {
 
-            await PerformRegistryImport("ToolBOX_Remastered.Resources.disable_fso_gamebar.reg",
-                "Full-Screen Optimizations and Game Bar disabled successfully! A Windows restart may be required.",
-                "Failed to disable Full-Screen Optimizations and Game Bar.");
+            await PerformRegistryImport("ToolBOX_Remastered.Resources.disable_gamebar.reg",
+                "Game Bar and GameDVR disabled successfully! A Windows restart may be required.",
+                "Failed to disable Game Bar and GameDVR.");
 
         }
 

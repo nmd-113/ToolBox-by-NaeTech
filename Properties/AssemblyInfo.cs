@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("ToolBOX Remastered")]
-[assembly: AssemblyDescription("A tool to make your day better")]
+[assembly: AssemblyDescription("A tool to make your windows experience better")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("NaeTech.ro")]
 [assembly: AssemblyProduct("ToolBOX Remastered")]
@@ -29,5 +29,5 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-[assembly: AssemblyVersion("1.0.1.1")]
-[assembly: AssemblyFileVersion("1.0.1.1")]
+[assembly: AssemblyVersion("1.0.1.2")]
+[assembly: AssemblyFileVersion("1.0.1.2")]
