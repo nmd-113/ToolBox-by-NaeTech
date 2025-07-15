@@ -45,6 +45,8 @@ namespace ToolBOX_Remastered
             this.donate_icon = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.quick_installer = new System.Windows.Forms.Panel();
+            this.tip4 = new System.Windows.Forms.Label();
+            this.winGetCbx = new System.Windows.Forms.CheckBox();
             this.tip3 = new System.Windows.Forms.Label();
             this.tip2 = new System.Windows.Forms.Label();
             this.tip1 = new System.Windows.Forms.Label();
@@ -122,6 +124,8 @@ namespace ToolBOX_Remastered
             this.naetech = new System.Windows.Forms.PictureBox();
             this.top_bar = new System.Windows.Forms.PictureBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.button16 = new System.Windows.Forms.Button();
+            this.label19 = new System.Windows.Forms.Label();
             this.side_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tweaker_icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.installer_icon)).BeginInit();
@@ -287,6 +291,8 @@ namespace ToolBOX_Remastered
             // quick_installer
             // 
             this.quick_installer.BackColor = System.Drawing.Color.Transparent;
+            this.quick_installer.Controls.Add(this.tip4);
+            this.quick_installer.Controls.Add(this.winGetCbx);
             this.quick_installer.Controls.Add(this.tip3);
             this.quick_installer.Controls.Add(this.tip2);
             this.quick_installer.Controls.Add(this.tip1);
@@ -329,6 +335,32 @@ namespace ToolBOX_Remastered
             this.quick_installer.Name = "quick_installer";
             this.quick_installer.Size = new System.Drawing.Size(622, 541);
             this.quick_installer.TabIndex = 75;
+            // 
+            // tip4
+            // 
+            this.tip4.AutoSize = true;
+            this.tip4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tip4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.tip4.Location = new System.Drawing.Point(213, 499);
+            this.tip4.Name = "tip4";
+            this.tip4.Size = new System.Drawing.Size(18, 20);
+            this.tip4.TabIndex = 128;
+            this.tip4.Text = "?";
+            // 
+            // winGetCbx
+            // 
+            this.winGetCbx.AutoSize = true;
+            this.winGetCbx.BackColor = System.Drawing.Color.Transparent;
+            this.winGetCbx.Checked = true;
+            this.winGetCbx.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.winGetCbx.Font = new System.Drawing.Font("Candara", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.winGetCbx.ForeColor = System.Drawing.Color.LightSkyBlue;
+            this.winGetCbx.Location = new System.Drawing.Point(135, 501);
+            this.winGetCbx.Name = "winGetCbx";
+            this.winGetCbx.Size = new System.Drawing.Size(81, 17);
+            this.winGetCbx.TabIndex = 127;
+            this.winGetCbx.Text = "Use Winget";
+            this.winGetCbx.UseVisualStyleBackColor = false;
             // 
             // tip3
             // 
@@ -870,10 +902,10 @@ namespace ToolBOX_Remastered
             this.installbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.installbtn.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.installbtn.ForeColor = System.Drawing.Color.White;
-            this.installbtn.Location = new System.Drawing.Point(15, 492);
+            this.installbtn.Location = new System.Drawing.Point(238, 492);
             this.installbtn.Margin = new System.Windows.Forms.Padding(0);
             this.installbtn.Name = "installbtn";
-            this.installbtn.Size = new System.Drawing.Size(591, 33);
+            this.installbtn.Size = new System.Drawing.Size(368, 33);
             this.installbtn.TabIndex = 89;
             this.installbtn.Text = "INSTALL";
             this.installbtn.UseVisualStyleBackColor = false;
@@ -922,13 +954,15 @@ namespace ToolBOX_Remastered
             this.sidebar_installer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
             this.sidebar_installer.Location = new System.Drawing.Point(15, 66);
             this.sidebar_installer.Name = "sidebar_installer";
-            this.sidebar_installer.Size = new System.Drawing.Size(103, 412);
+            this.sidebar_installer.Size = new System.Drawing.Size(103, 459);
             this.sidebar_installer.TabIndex = 114;
             this.sidebar_installer.TabStop = false;
             // 
             // windows_tweaker
             // 
             this.windows_tweaker.BackColor = System.Drawing.Color.Transparent;
+            this.windows_tweaker.Controls.Add(this.button16);
+            this.windows_tweaker.Controls.Add(this.label19);
             this.windows_tweaker.Controls.Add(this.button15);
             this.windows_tweaker.Controls.Add(this.label18);
             this.windows_tweaker.Controls.Add(this.button14);
@@ -1472,6 +1506,33 @@ namespace ToolBOX_Remastered
             this.toolTip1.IsBalloon = true;
             this.toolTip1.ReshowDelay = 100;
             // 
+            // button16
+            // 
+            this.button16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
+            this.button16.FlatAppearance.BorderSize = 0;
+            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button16.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button16.ForeColor = System.Drawing.Color.White;
+            this.button16.Location = new System.Drawing.Point(517, 178);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(74, 23);
+            this.button16.TabIndex = 159;
+            this.button16.Text = "APPLY";
+            this.button16.UseVisualStyleBackColor = false;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(15)))), ((int)(((byte)(20)))));
+            this.label19.Font = new System.Drawing.Font("Candara", 9F, System.Drawing.FontStyle.Bold);
+            this.label19.ForeColor = System.Drawing.SystemColors.Control;
+            this.label19.Location = new System.Drawing.Point(340, 182);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(126, 14);
+            this.label19.TabIndex = 158;
+            this.label19.Text = "Set Services to Manual:";
+            // 
             // toolbox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -1610,6 +1671,10 @@ namespace ToolBOX_Remastered
         private System.Windows.Forms.Label tip1;
         private System.Windows.Forms.Label tip2;
         private System.Windows.Forms.Label tip3;
+        private System.Windows.Forms.CheckBox winGetCbx;
+        private System.Windows.Forms.Label tip4;
+        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Label label19;
     }
 }
 
