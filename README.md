@@ -1,37 +1,66 @@
-# ToolBox Remastered
+# ToolBOX Remastered
 
-ToolBox Remastered is a refreshed version of the original ToolBox by NaeTech. It keeps all the features that made the original great while introducing improvements to make it even easier to use and more effective. Whether you're installing apps or tweaking your system, ToolBox Remastered is here to help.
+ToolBOX Remastered is a versatile Windows utility designed to streamline application installations and apply system tweaks. This tool provides a convenient interface to quickly install essential software and optimize your Windows environment with a single click.
 
-What's New in the Remastered Version:
+---
 
-- Updated Interface: A cleaner, more modern look that’s easy to navigate.
+## Features
 
-- New Productivity Apps: Added useful programs like LibreOffice, PDF Gear, and MS Office.
+### Quick Installer
+Effortlessly install a suite of popular applications. ToolBOX Remastered offers the flexibility to use **Winget** for a clean, up-to-date installation or fall back to direct downloads if Winget isn't available or preferred.
 
-- Improved Speed and Stability: Optimized for a smoother experience.
+Key applications available for installation include:
+* **Archivers:** 7-Zip
+* **Torrent Clients:** qBittorrent
+* **Media Players:** VLC Media Player, K-Lite Codec Pack Standard
+* **Gaming Launchers:** Steam, Epic Games Launcher, EA App, GOG Galaxy, Ubisoft Connect, GeForce Now
+* **Web Browsers:** Chrome, Opera, Brave, Firefox
+* **Productivity:** LibreOffice, PDF Gear, MS Office 2021 Lite, Adobe Acrobat Reader
+* **Runtimes & Frameworks:** DirectX, .NET Runtime (all versions), Microsoft Visual C++ Redistributables (2005-2022)
 
-- Silent Installation: Install apps faster, with fewer steps.
+### Windows Tweaker
+Optimize your Windows experience with a collection of powerful tweaks.
 
-# All the Initial Features, Still Here!
+Available tweaks include:
+* **User Interface:** Enable old context menu, enable legacy photo viewer.
+* **Privacy & Annoyances:** Disable Windows Ads, disable Start Menu web search, disable Game Bar and Game DVR, disable Weather Widget.
+* **System Performance:** Disable automatic Windows Updates, disable automatic driver updates, optimize visual effects, disable hibernation, add Ultimate Performance Power Plan.
+* **Utilities:** Uninstall OneDrive, uninstall Copilot, enable DirectPlay, add "Run with Priority" context menu.
 
-ToolBox Remastered builds on the foundation of the initial ToolBox. It still includes:
+---
 
-- Quick Apps Installer: Install tools like 7-Zip, VLC Media Player, Steam, and more with a single click.
+## Getting Started
 
-- Windows Tweaker: Optimize your system effortlessly with tweaks like Classic Context Menu, disabling ads, and enabling Ultimate Performance Mode.
+### Installation
+1.  Download the latest release from the [releases page](https://github.com/nmd-113/ToolBOX-Remastered/releases).
+2.  Extract the contents of the downloaded archive to your desired location.
+3.  Run `ToolBOX_Remastered.exe`.
 
-Why ToolBox Remastered?
+### Usage
 
-- Saves Time: Install apps quickly and customize your system with ease.
+#### Quick Installer
+1.  Navigate to the **Installer** section from the side menu.
+2.  Select the applications you wish to install by checking the corresponding boxes.
+3.  Optionally, enable the "Use Winget" checkbox for Winget-based installations.
+4.  Click the **Install** button to begin the installation process.
+5.  Follow any on-screen prompts during installation.
 
-- User-Friendly: Built for everyone, tech-savvy or not.
+#### Windows Tweaker
+1.  Navigate to the **Tweaker** section from the side menu.
+2.  Click on the button corresponding to the tweak you wish to apply.
+3.  Some tweaks may require a system restart or log-out to take full effect. The tool will notify you if this is necessary.
 
-- All-in-One Solution: Combines app installation and system tweaks in one tool.
+---
 
-How to Use:
+## Contributing
+We welcome contributions! If you have suggestions for new features, bug fixes, or improvements, please feel free to open an issue or submit a pull request.
 
-- Download the app.
+---
 
-- Run the app, choose what you need, and let it work its magic.
+## Support
+If you encounter any issues or have questions, please open an issue on the GitHub repository.
 
-- Enjoy a faster, better PC setup!
+---
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
