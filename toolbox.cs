@@ -250,7 +250,10 @@ namespace ToolBOX_Remastered
                 Cursor = Cursors.AppStarting;
                 progressbar.Value = 0;
 
-                await EnsureWingetInstalledAsync();
+                if (winGetCbx.Checked)
+                {
+                    await EnsureWingetInstalledAsync();
+                }
 
                 if (cb_7zip.Checked) tasks.Add(() => InstallAppSmart("7zip.7zip", "7-Zip", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/7zip-x64.exe", "/S", results));
                 if (cb_qbit.Checked) tasks.Add(() => InstallAppSmart("qBittorrent.qBittorrent", "qBittorrent", "https://www.naetech.ro/wp-content/uploads/2024/toolbox/qbittorrent_x64_setup.exe", "/S", results));
