@@ -1,24 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
 using System.Security.Principal;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ToolBOX_Remastered
+namespace ToolBOX_by_Naetech
 {
     internal static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
             if (!IsAdministrator())
             {
-                // Restart with admin privileges
                 var processInfo = new ProcessStartInfo
                 {
                     FileName = Process.GetCurrentProcess().MainModule.FileName,
@@ -39,7 +32,7 @@ namespace ToolBOX_Remastered
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new toolbox());
+            Application.Run(new Toolbox());
         }
 
         static bool IsAdministrator()

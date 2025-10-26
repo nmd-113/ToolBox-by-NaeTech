@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{2BE0B2DB-F48A-4562-AF51-18D6ED6FD1C0}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ToolBOX_Remastered</RootNamespace>
-    <AssemblyName>ToolBOX Remastered</AssemblyName>
+    <RootNamespace>ToolBOX</RootNamespace>
+    <AssemblyName>ToolBOX by NaeTech</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -27,12 +27,15 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugType>pdbonly</DebugType>
+    <DebugType>embedded</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>false</SignManifests>
@@ -71,16 +74,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FontManager.cs" />
-    <Compile Include="toolbox.cs">
+    <Compile Include="ServiceConfig.cs" />
+    <Compile Include="Toolbox.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="toolbox.Designer.cs">
-      <DependentUpon>toolbox.cs</DependentUpon>
+    <Compile Include="Toolbox.Designer.cs">
+      <DependentUpon>Toolbox.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="toolbox.resx">
-      <DependentUpon>toolbox.cs</DependentUpon>
+    <EmbeddedResource Include="Toolbox.resx">
+      <DependentUpon>Toolbox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -127,6 +131,8 @@
     <None Include="Resources\windows-tweaker-icon.png" />
     <None Include="Resources\quick-installer-icon.png" />
     <EmbeddedResource Include="Resources\uninstall-onedrive.bat" />
+    <None Include="Resources\loadingPictureBox.bmp" />
+    <None Include="Resources\loading.gif" />
     <Content Include="Toolbox-icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,18 +1,10 @@
 ﻿using System.Drawing;
 
-namespace ToolBOX_Remastered
+namespace ToolBOX_by_Naetech
 {
-    partial class toolbox
+    partial class Toolbox
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
-
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -24,14 +16,10 @@ namespace ToolBOX_Remastered
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(toolbox));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Toolbox));
             this.app_title = new System.Windows.Forms.Label();
             this.minimizebtn = new System.Windows.Forms.Button();
             this.exitbtn = new System.Windows.Forms.Button();
@@ -45,6 +33,12 @@ namespace ToolBOX_Remastered
             this.donate_icon = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.quick_installer = new System.Windows.Forms.Panel();
+            this.cb_notepadpp = new System.Windows.Forms.CheckBox();
+            this.cb_vmware = new System.Windows.Forms.CheckBox();
+            this.cb_wincdemu = new System.Windows.Forms.CheckBox();
+            this.cb_anydesk = new System.Windows.Forms.CheckBox();
+            this.cb_bcuninstaller = new System.Windows.Forms.CheckBox();
+            this.cb_handbrake = new System.Windows.Forms.CheckBox();
             this.tip4 = new System.Windows.Forms.Label();
             this.winGetCbx = new System.Windows.Forms.CheckBox();
             this.tip3 = new System.Windows.Forms.Label();
@@ -85,6 +79,8 @@ namespace ToolBOX_Remastered
             this.internet_txt = new System.Windows.Forms.Label();
             this.sidebar_installer = new System.Windows.Forms.PictureBox();
             this.windows_tweaker = new System.Windows.Forms.Panel();
+            this.button16 = new System.Windows.Forms.Button();
+            this.label19 = new System.Windows.Forms.Label();
             this.button15 = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
             this.button14 = new System.Windows.Forms.Button();
@@ -121,11 +117,13 @@ namespace ToolBOX_Remastered
             this.tweaker_txt2 = new System.Windows.Forms.Label();
             this.tweaker_txt = new System.Windows.Forms.Label();
             this.topbar_tweaker = new System.Windows.Forms.PictureBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.naetech = new System.Windows.Forms.PictureBox();
             this.top_bar = new System.Windows.Forms.PictureBox();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.button16 = new System.Windows.Forms.Button();
-            this.label19 = new System.Windows.Forms.Label();
+            this.tip5 = new System.Windows.Forms.Label();
+            this.tip6 = new System.Windows.Forms.Label();
+            this.cb_stremio = new System.Windows.Forms.CheckBox();
+            this.tip7 = new System.Windows.Forms.Label();
             this.side_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tweaker_icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.installer_icon)).BeginInit();
@@ -166,7 +164,7 @@ namespace ToolBOX_Remastered
             this.minimizebtn.TabIndex = 71;
             this.minimizebtn.Text = "MINIMIZE";
             this.minimizebtn.UseVisualStyleBackColor = false;
-            this.minimizebtn.Click += new System.EventHandler(this.minimizebtn_Click);
+            this.minimizebtn.Click += new System.EventHandler(this.Minimizebtn_Click);
             // 
             // exitbtn
             // 
@@ -181,7 +179,7 @@ namespace ToolBOX_Remastered
             this.exitbtn.TabIndex = 72;
             this.exitbtn.Text = "EXIT";
             this.exitbtn.UseVisualStyleBackColor = false;
-            this.exitbtn.Click += new System.EventHandler(this.exitbtn_Click);
+            this.exitbtn.Click += new System.EventHandler(this.Exitbtn_Click);
             // 
             // side_panel
             // 
@@ -201,30 +199,30 @@ namespace ToolBOX_Remastered
             // tweaker_icon
             // 
             this.tweaker_icon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(20)))), ((int)(((byte)(40)))));
-            this.tweaker_icon.Image = global::ToolBOX_Remastered.Properties.Resources.windows_tweaker_icon;
+            this.tweaker_icon.Image = global::ToolBOX.Properties.Resources.windows_tweaker_icon;
             this.tweaker_icon.Location = new System.Drawing.Point(52, 243);
             this.tweaker_icon.Name = "tweaker_icon";
             this.tweaker_icon.Size = new System.Drawing.Size(75, 75);
             this.tweaker_icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.tweaker_icon.TabIndex = 1;
             this.tweaker_icon.TabStop = false;
-            this.tweaker_icon.Click += new System.EventHandler(this.tweaker_icon_Click);
-            this.tweaker_icon.MouseEnter += new System.EventHandler(this.tweaker_icon_MouseEnter);
-            this.tweaker_icon.MouseLeave += new System.EventHandler(this.tweaker_icon_MouseLeave);
+            this.tweaker_icon.Click += new System.EventHandler(this.Tweaker_icon_Click);
+            this.tweaker_icon.MouseEnter += new System.EventHandler(this.Tweaker_icon_MouseEnter);
+            this.tweaker_icon.MouseLeave += new System.EventHandler(this.Tweaker_icon_MouseLeave);
             // 
             // installer_icon
             // 
             this.installer_icon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(15)))), ((int)(((byte)(20)))));
-            this.installer_icon.Image = global::ToolBOX_Remastered.Properties.Resources.quick_installer_icon;
+            this.installer_icon.Image = global::ToolBOX.Properties.Resources.quick_installer_icon;
             this.installer_icon.Location = new System.Drawing.Point(52, 133);
             this.installer_icon.Name = "installer_icon";
             this.installer_icon.Size = new System.Drawing.Size(75, 75);
             this.installer_icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.installer_icon.TabIndex = 0;
             this.installer_icon.TabStop = false;
-            this.installer_icon.Click += new System.EventHandler(this.installer_icon_Click);
-            this.installer_icon.MouseEnter += new System.EventHandler(this.installer_icon_MouseEnter);
-            this.installer_icon.MouseLeave += new System.EventHandler(this.installer_icon_MouseLeave);
+            this.installer_icon.Click += new System.EventHandler(this.Installer_icon_Click);
+            this.installer_icon.MouseEnter += new System.EventHandler(this.Installer_icon_MouseEnter);
+            this.installer_icon.MouseLeave += new System.EventHandler(this.Installer_icon_MouseLeave);
             // 
             // tweaker_back
             // 
@@ -267,19 +265,19 @@ namespace ToolBOX_Remastered
             this.naetech_link.TabIndex = 3;
             this.naetech_link.TabStop = true;
             this.naetech_link.Text = "www.naetech.ro";
-            this.naetech_link.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.naetech_link_LinkClicked);
+            this.naetech_link.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Naetech_link_LinkClicked);
             // 
             // donate_icon
             // 
             this.donate_icon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.donate_icon.Image = global::ToolBOX_Remastered.Properties.Resources.donate_icon;
+            this.donate_icon.Image = global::ToolBOX.Properties.Resources.donate_icon;
             this.donate_icon.Location = new System.Drawing.Point(72, 442);
             this.donate_icon.Name = "donate_icon";
             this.donate_icon.Size = new System.Drawing.Size(35, 35);
             this.donate_icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.donate_icon.TabIndex = 2;
             this.donate_icon.TabStop = false;
-            this.donate_icon.Click += new System.EventHandler(this.donate_icon_Click);
+            this.donate_icon.Click += new System.EventHandler(this.Donate_icon_Click);
             // 
             // panel3
             // 
@@ -291,6 +289,16 @@ namespace ToolBOX_Remastered
             // quick_installer
             // 
             this.quick_installer.BackColor = System.Drawing.Color.Transparent;
+            this.quick_installer.Controls.Add(this.tip7);
+            this.quick_installer.Controls.Add(this.cb_stremio);
+            this.quick_installer.Controls.Add(this.tip6);
+            this.quick_installer.Controls.Add(this.tip5);
+            this.quick_installer.Controls.Add(this.cb_notepadpp);
+            this.quick_installer.Controls.Add(this.cb_vmware);
+            this.quick_installer.Controls.Add(this.cb_wincdemu);
+            this.quick_installer.Controls.Add(this.cb_anydesk);
+            this.quick_installer.Controls.Add(this.cb_bcuninstaller);
+            this.quick_installer.Controls.Add(this.cb_handbrake);
             this.quick_installer.Controls.Add(this.tip4);
             this.quick_installer.Controls.Add(this.winGetCbx);
             this.quick_installer.Controls.Add(this.tip3);
@@ -336,12 +344,126 @@ namespace ToolBOX_Remastered
             this.quick_installer.Size = new System.Drawing.Size(622, 541);
             this.quick_installer.TabIndex = 75;
             // 
+            // cb_notepadpp
+            // 
+            this.cb_notepadpp.AutoSize = true;
+            this.cb_notepadpp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(15)))), ((int)(((byte)(20)))));
+            this.cb_notepadpp.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.cb_notepadpp.FlatAppearance.BorderSize = 0;
+            this.cb_notepadpp.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
+            this.cb_notepadpp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.cb_notepadpp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cb_notepadpp.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_notepadpp.ForeColor = System.Drawing.Color.White;
+            this.cb_notepadpp.Location = new System.Drawing.Point(439, 106);
+            this.cb_notepadpp.Margin = new System.Windows.Forms.Padding(5);
+            this.cb_notepadpp.Name = "cb_notepadpp";
+            this.cb_notepadpp.Size = new System.Drawing.Size(88, 19);
+            this.cb_notepadpp.TabIndex = 134;
+            this.cb_notepadpp.Text = "Notepad++";
+            this.cb_notepadpp.UseVisualStyleBackColor = false;
+            // 
+            // cb_vmware
+            // 
+            this.cb_vmware.AutoSize = true;
+            this.cb_vmware.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(15)))), ((int)(((byte)(20)))));
+            this.cb_vmware.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.cb_vmware.FlatAppearance.BorderSize = 0;
+            this.cb_vmware.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
+            this.cb_vmware.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.cb_vmware.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cb_vmware.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_vmware.ForeColor = System.Drawing.Color.White;
+            this.cb_vmware.Location = new System.Drawing.Point(135, 392);
+            this.cb_vmware.Margin = new System.Windows.Forms.Padding(5);
+            this.cb_vmware.Name = "cb_vmware";
+            this.cb_vmware.Size = new System.Drawing.Size(94, 19);
+            this.cb_vmware.TabIndex = 133;
+            this.cb_vmware.Text = "VMware WS";
+            this.cb_vmware.UseVisualStyleBackColor = false;
+            // 
+            // cb_wincdemu
+            // 
+            this.cb_wincdemu.AutoSize = true;
+            this.cb_wincdemu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(15)))), ((int)(((byte)(20)))));
+            this.cb_wincdemu.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.cb_wincdemu.FlatAppearance.BorderSize = 0;
+            this.cb_wincdemu.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
+            this.cb_wincdemu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.cb_wincdemu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cb_wincdemu.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_wincdemu.ForeColor = System.Drawing.Color.White;
+            this.cb_wincdemu.Location = new System.Drawing.Point(282, 106);
+            this.cb_wincdemu.Margin = new System.Windows.Forms.Padding(5);
+            this.cb_wincdemu.Name = "cb_wincdemu";
+            this.cb_wincdemu.Size = new System.Drawing.Size(88, 19);
+            this.cb_wincdemu.TabIndex = 132;
+            this.cb_wincdemu.Text = "WinCDEmu";
+            this.cb_wincdemu.UseVisualStyleBackColor = false;
+            // 
+            // cb_anydesk
+            // 
+            this.cb_anydesk.AutoSize = true;
+            this.cb_anydesk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(15)))), ((int)(((byte)(20)))));
+            this.cb_anydesk.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.cb_anydesk.FlatAppearance.BorderSize = 0;
+            this.cb_anydesk.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
+            this.cb_anydesk.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.cb_anydesk.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cb_anydesk.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_anydesk.ForeColor = System.Drawing.Color.White;
+            this.cb_anydesk.Location = new System.Drawing.Point(135, 106);
+            this.cb_anydesk.Margin = new System.Windows.Forms.Padding(5);
+            this.cb_anydesk.Name = "cb_anydesk";
+            this.cb_anydesk.Size = new System.Drawing.Size(74, 19);
+            this.cb_anydesk.TabIndex = 131;
+            this.cb_anydesk.Text = "AnyDesk";
+            this.cb_anydesk.UseVisualStyleBackColor = false;
+            // 
+            // cb_bcuninstaller
+            // 
+            this.cb_bcuninstaller.AutoSize = true;
+            this.cb_bcuninstaller.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(15)))), ((int)(((byte)(20)))));
+            this.cb_bcuninstaller.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.cb_bcuninstaller.FlatAppearance.BorderSize = 0;
+            this.cb_bcuninstaller.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
+            this.cb_bcuninstaller.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.cb_bcuninstaller.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cb_bcuninstaller.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_bcuninstaller.ForeColor = System.Drawing.Color.White;
+            this.cb_bcuninstaller.Location = new System.Drawing.Point(439, 81);
+            this.cb_bcuninstaller.Margin = new System.Windows.Forms.Padding(5);
+            this.cb_bcuninstaller.Name = "cb_bcuninstaller";
+            this.cb_bcuninstaller.Size = new System.Drawing.Size(142, 19);
+            this.cb_bcuninstaller.TabIndex = 130;
+            this.cb_bcuninstaller.Text = "Bulk Crap Uninstaller";
+            this.cb_bcuninstaller.UseVisualStyleBackColor = false;
+            // 
+            // cb_handbrake
+            // 
+            this.cb_handbrake.AutoSize = true;
+            this.cb_handbrake.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(15)))), ((int)(((byte)(20)))));
+            this.cb_handbrake.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.cb_handbrake.FlatAppearance.BorderSize = 0;
+            this.cb_handbrake.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
+            this.cb_handbrake.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.cb_handbrake.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cb_handbrake.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_handbrake.ForeColor = System.Drawing.Color.White;
+            this.cb_handbrake.Location = new System.Drawing.Point(439, 139);
+            this.cb_handbrake.Margin = new System.Windows.Forms.Padding(5);
+            this.cb_handbrake.Name = "cb_handbrake";
+            this.cb_handbrake.Size = new System.Drawing.Size(88, 19);
+            this.cb_handbrake.TabIndex = 129;
+            this.cb_handbrake.Text = "HandBrake";
+            this.cb_handbrake.UseVisualStyleBackColor = false;
+            // 
             // tip4
             // 
             this.tip4.AutoSize = true;
             this.tip4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tip4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.tip4.Location = new System.Drawing.Point(213, 499);
+            this.tip4.Location = new System.Drawing.Point(232, 498);
             this.tip4.Name = "tip4";
             this.tip4.Size = new System.Drawing.Size(18, 20);
             this.tip4.TabIndex = 128;
@@ -353,11 +475,11 @@ namespace ToolBOX_Remastered
             this.winGetCbx.BackColor = System.Drawing.Color.Transparent;
             this.winGetCbx.Checked = true;
             this.winGetCbx.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.winGetCbx.Font = new System.Drawing.Font("Candara", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.winGetCbx.ForeColor = System.Drawing.Color.LightSkyBlue;
-            this.winGetCbx.Location = new System.Drawing.Point(135, 501);
+            this.winGetCbx.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.winGetCbx.ForeColor = System.Drawing.Color.White;
+            this.winGetCbx.Location = new System.Drawing.Point(135, 499);
             this.winGetCbx.Name = "winGetCbx";
-            this.winGetCbx.Size = new System.Drawing.Size(81, 17);
+            this.winGetCbx.Size = new System.Drawing.Size(91, 19);
             this.winGetCbx.TabIndex = 127;
             this.winGetCbx.Text = "Use Winget";
             this.winGetCbx.UseVisualStyleBackColor = false;
@@ -367,7 +489,7 @@ namespace ToolBOX_Remastered
             this.tip3.AutoSize = true;
             this.tip3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tip3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.tip3.Location = new System.Drawing.Point(447, 294);
+            this.tip3.Location = new System.Drawing.Point(394, 308);
             this.tip3.Name = "tip3";
             this.tip3.Size = new System.Drawing.Size(18, 20);
             this.tip3.TabIndex = 126;
@@ -378,7 +500,7 @@ namespace ToolBOX_Remastered
             this.tip2.AutoSize = true;
             this.tip2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tip2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.tip2.Location = new System.Drawing.Point(434, 359);
+            this.tip2.Location = new System.Drawing.Point(391, 366);
             this.tip2.Name = "tip2";
             this.tip2.Size = new System.Drawing.Size(18, 20);
             this.tip2.TabIndex = 125;
@@ -389,7 +511,7 @@ namespace ToolBOX_Remastered
             this.tip1.AutoSize = true;
             this.tip1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tip1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.tip1.Location = new System.Drawing.Point(255, 382);
+            this.tip1.Location = new System.Drawing.Point(526, 366);
             this.tip1.Name = "tip1";
             this.tip1.Size = new System.Drawing.Size(18, 20);
             this.tip1.TabIndex = 124;
@@ -397,15 +519,13 @@ namespace ToolBOX_Remastered
             // 
             // loadinglabel
             // 
-            this.loadinglabel.AutoSize = true;
             this.loadinglabel.BackColor = System.Drawing.Color.Transparent;
             this.loadinglabel.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loadinglabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.loadinglabel.Location = new System.Drawing.Point(137, 430);
             this.loadinglabel.Margin = new System.Windows.Forms.Padding(0);
-            this.loadinglabel.MinimumSize = new System.Drawing.Size(466, 20);
             this.loadinglabel.Name = "loadinglabel";
-            this.loadinglabel.Size = new System.Drawing.Size(466, 20);
+            this.loadinglabel.Size = new System.Drawing.Size(469, 20);
             this.loadinglabel.TabIndex = 121;
             this.loadinglabel.Text = "Installing the selected apps, please wait until the install is finished.";
             this.loadinglabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -456,12 +576,12 @@ namespace ToolBOX_Remastered
             this.cb_acrobat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cb_acrobat.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_acrobat.ForeColor = System.Drawing.Color.White;
-            this.cb_acrobat.Location = new System.Drawing.Point(292, 318);
+            this.cb_acrobat.Location = new System.Drawing.Point(439, 309);
             this.cb_acrobat.Margin = new System.Windows.Forms.Padding(5);
             this.cb_acrobat.Name = "cb_acrobat";
-            this.cb_acrobat.Size = new System.Drawing.Size(152, 19);
+            this.cb_acrobat.Size = new System.Drawing.Size(105, 19);
             this.cb_acrobat.TabIndex = 119;
-            this.cb_acrobat.Text = "Adobe Acrobat Reader";
+            this.cb_acrobat.Text = "Adobe Reader";
             this.cb_acrobat.UseVisualStyleBackColor = false;
             // 
             // cb_office
@@ -475,12 +595,12 @@ namespace ToolBOX_Remastered
             this.cb_office.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cb_office.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_office.ForeColor = System.Drawing.Color.White;
-            this.cb_office.Location = new System.Drawing.Point(292, 295);
+            this.cb_office.Location = new System.Drawing.Point(282, 309);
             this.cb_office.Margin = new System.Windows.Forms.Padding(5);
             this.cb_office.Name = "cb_office";
-            this.cb_office.Size = new System.Drawing.Size(150, 19);
+            this.cb_office.Size = new System.Drawing.Size(106, 19);
             this.cb_office.TabIndex = 118;
-            this.cb_office.Text = "MS Office 2021 (*Slim)";
+            this.cb_office.Text = "MS Office 2021";
             this.cb_office.UseVisualStyleBackColor = false;
             // 
             // cb_gear
@@ -494,7 +614,7 @@ namespace ToolBOX_Remastered
             this.cb_gear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cb_gear.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_gear.ForeColor = System.Drawing.Color.White;
-            this.cb_gear.Location = new System.Drawing.Point(135, 318);
+            this.cb_gear.Location = new System.Drawing.Point(135, 334);
             this.cb_gear.Margin = new System.Windows.Forms.Padding(5);
             this.cb_gear.Name = "cb_gear";
             this.cb_gear.Size = new System.Drawing.Size(76, 19);
@@ -513,7 +633,7 @@ namespace ToolBOX_Remastered
             this.cb_libre.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cb_libre.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_libre.ForeColor = System.Drawing.Color.White;
-            this.cb_libre.Location = new System.Drawing.Point(135, 295);
+            this.cb_libre.Location = new System.Drawing.Point(135, 309);
             this.cb_libre.Margin = new System.Windows.Forms.Padding(5);
             this.cb_libre.Name = "cb_libre";
             this.cb_libre.Size = new System.Drawing.Size(90, 19);
@@ -536,7 +656,7 @@ namespace ToolBOX_Remastered
             this.productivity_txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
             this.productivity_txt.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.productivity_txt.ForeColor = System.Drawing.Color.White;
-            this.productivity_txt.Location = new System.Drawing.Point(27, 296);
+            this.productivity_txt.Location = new System.Drawing.Point(27, 311);
             this.productivity_txt.Margin = new System.Windows.Forms.Padding(0);
             this.productivity_txt.Name = "productivity_txt";
             this.productivity_txt.Size = new System.Drawing.Size(77, 15);
@@ -549,7 +669,7 @@ namespace ToolBOX_Remastered
             this.multimedia_txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
             this.multimedia_txt.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.multimedia_txt.ForeColor = System.Drawing.Color.White;
-            this.multimedia_txt.Location = new System.Drawing.Point(27, 124);
+            this.multimedia_txt.Location = new System.Drawing.Point(27, 141);
             this.multimedia_txt.Margin = new System.Windows.Forms.Padding(0);
             this.multimedia_txt.Name = "multimedia_txt";
             this.multimedia_txt.Size = new System.Drawing.Size(73, 15);
@@ -567,7 +687,7 @@ namespace ToolBOX_Remastered
             this.cb_qbit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cb_qbit.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_qbit.ForeColor = System.Drawing.Color.White;
-            this.cb_qbit.Location = new System.Drawing.Point(292, 81);
+            this.cb_qbit.Location = new System.Drawing.Point(282, 81);
             this.cb_qbit.Margin = new System.Windows.Forms.Padding(5);
             this.cb_qbit.Name = "cb_qbit";
             this.cb_qbit.Size = new System.Drawing.Size(90, 19);
@@ -605,7 +725,7 @@ namespace ToolBOX_Remastered
             this.cb_brave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cb_brave.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_brave.ForeColor = System.Drawing.Color.White;
-            this.cb_brave.Location = new System.Drawing.Point(135, 253);
+            this.cb_brave.Location = new System.Drawing.Point(135, 277);
             this.cb_brave.Margin = new System.Windows.Forms.Padding(5);
             this.cb_brave.Name = "cb_brave";
             this.cb_brave.Size = new System.Drawing.Size(58, 19);
@@ -624,7 +744,7 @@ namespace ToolBOX_Remastered
             this.cb_opera.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cb_opera.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_opera.ForeColor = System.Drawing.Color.White;
-            this.cb_opera.Location = new System.Drawing.Point(292, 231);
+            this.cb_opera.Location = new System.Drawing.Point(282, 255);
             this.cb_opera.Margin = new System.Windows.Forms.Padding(5);
             this.cb_opera.Name = "cb_opera";
             this.cb_opera.Size = new System.Drawing.Size(60, 19);
@@ -643,7 +763,7 @@ namespace ToolBOX_Remastered
             this.cb_firefox.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cb_firefox.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_firefox.ForeColor = System.Drawing.Color.White;
-            this.cb_firefox.Location = new System.Drawing.Point(292, 253);
+            this.cb_firefox.Location = new System.Drawing.Point(439, 255);
             this.cb_firefox.Margin = new System.Windows.Forms.Padding(5);
             this.cb_firefox.Name = "cb_firefox";
             this.cb_firefox.Size = new System.Drawing.Size(66, 19);
@@ -662,7 +782,7 @@ namespace ToolBOX_Remastered
             this.cb_chrome.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cb_chrome.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_chrome.ForeColor = System.Drawing.Color.White;
-            this.cb_chrome.Location = new System.Drawing.Point(135, 230);
+            this.cb_chrome.Location = new System.Drawing.Point(135, 255);
             this.cb_chrome.Margin = new System.Windows.Forms.Padding(5);
             this.cb_chrome.Name = "cb_chrome";
             this.cb_chrome.Size = new System.Drawing.Size(70, 19);
@@ -681,12 +801,12 @@ namespace ToolBOX_Remastered
             this.cb_netrun.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cb_netrun.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_netrun.ForeColor = System.Drawing.Color.White;
-            this.cb_netrun.Location = new System.Drawing.Point(292, 360);
+            this.cb_netrun.Location = new System.Drawing.Point(282, 367);
             this.cb_netrun.Margin = new System.Windows.Forms.Padding(5);
             this.cb_netrun.Name = "cb_netrun";
-            this.cb_netrun.Size = new System.Drawing.Size(137, 19);
+            this.cb_netrun.Size = new System.Drawing.Size(103, 19);
             this.cb_netrun.TabIndex = 103;
-            this.cb_netrun.Text = ".NET Runtime (*All)";
+            this.cb_netrun.Text = ".NET Runtime";
             this.cb_netrun.UseVisualStyleBackColor = false;
             // 
             // cb_vcplus
@@ -700,12 +820,12 @@ namespace ToolBOX_Remastered
             this.cb_vcplus.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cb_vcplus.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_vcplus.ForeColor = System.Drawing.Color.White;
-            this.cb_vcplus.Location = new System.Drawing.Point(135, 383);
+            this.cb_vcplus.Location = new System.Drawing.Point(439, 367);
             this.cb_vcplus.Margin = new System.Windows.Forms.Padding(5);
             this.cb_vcplus.Name = "cb_vcplus";
-            this.cb_vcplus.Size = new System.Drawing.Size(115, 19);
+            this.cb_vcplus.Size = new System.Drawing.Size(81, 19);
             this.cb_vcplus.TabIndex = 102;
-            this.cb_vcplus.Text = "Visual C++ (*All)";
+            this.cb_vcplus.Text = "Visual C++";
             this.cb_vcplus.UseVisualStyleBackColor = false;
             // 
             // cb_dx
@@ -719,7 +839,7 @@ namespace ToolBOX_Remastered
             this.cb_dx.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cb_dx.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_dx.ForeColor = System.Drawing.Color.White;
-            this.cb_dx.Location = new System.Drawing.Point(135, 360);
+            this.cb_dx.Location = new System.Drawing.Point(135, 367);
             this.cb_dx.Margin = new System.Windows.Forms.Padding(5);
             this.cb_dx.Name = "cb_dx";
             this.cb_dx.Size = new System.Drawing.Size(68, 19);
@@ -733,7 +853,7 @@ namespace ToolBOX_Remastered
             this.system_txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
             this.system_txt.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.system_txt.ForeColor = System.Drawing.Color.White;
-            this.system_txt.Location = new System.Drawing.Point(27, 361);
+            this.system_txt.Location = new System.Drawing.Point(27, 369);
             this.system_txt.Margin = new System.Windows.Forms.Padding(0);
             this.system_txt.Name = "system_txt";
             this.system_txt.Size = new System.Drawing.Size(51, 15);
@@ -751,7 +871,7 @@ namespace ToolBOX_Remastered
             this.cb_gfn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cb_gfn.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_gfn.ForeColor = System.Drawing.Color.White;
-            this.cb_gfn.Location = new System.Drawing.Point(449, 188);
+            this.cb_gfn.Location = new System.Drawing.Point(439, 222);
             this.cb_gfn.Margin = new System.Windows.Forms.Padding(5);
             this.cb_gfn.Name = "cb_gfn";
             this.cb_gfn.Size = new System.Drawing.Size(100, 19);
@@ -770,7 +890,7 @@ namespace ToolBOX_Remastered
             this.cb_gog.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cb_gog.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_gog.ForeColor = System.Drawing.Color.White;
-            this.cb_gog.Location = new System.Drawing.Point(135, 188);
+            this.cb_gog.Location = new System.Drawing.Point(135, 222);
             this.cb_gog.Margin = new System.Windows.Forms.Padding(5);
             this.cb_gog.Name = "cb_gog";
             this.cb_gog.Size = new System.Drawing.Size(90, 19);
@@ -789,7 +909,7 @@ namespace ToolBOX_Remastered
             this.cb_ea.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cb_ea.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_ea.ForeColor = System.Drawing.Color.White;
-            this.cb_ea.Location = new System.Drawing.Point(449, 166);
+            this.cb_ea.Location = new System.Drawing.Point(439, 197);
             this.cb_ea.Margin = new System.Windows.Forms.Padding(5);
             this.cb_ea.Name = "cb_ea";
             this.cb_ea.Size = new System.Drawing.Size(64, 19);
@@ -808,7 +928,7 @@ namespace ToolBOX_Remastered
             this.cb_ubi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cb_ubi.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_ubi.ForeColor = System.Drawing.Color.White;
-            this.cb_ubi.Location = new System.Drawing.Point(292, 188);
+            this.cb_ubi.Location = new System.Drawing.Point(282, 222);
             this.cb_ubi.Margin = new System.Windows.Forms.Padding(5);
             this.cb_ubi.Name = "cb_ubi";
             this.cb_ubi.Size = new System.Drawing.Size(116, 19);
@@ -827,7 +947,7 @@ namespace ToolBOX_Remastered
             this.cb_epic.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cb_epic.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_epic.ForeColor = System.Drawing.Color.White;
-            this.cb_epic.Location = new System.Drawing.Point(292, 166);
+            this.cb_epic.Location = new System.Drawing.Point(282, 197);
             this.cb_epic.Margin = new System.Windows.Forms.Padding(5);
             this.cb_epic.Name = "cb_epic";
             this.cb_epic.Size = new System.Drawing.Size(89, 19);
@@ -846,7 +966,7 @@ namespace ToolBOX_Remastered
             this.cb_steam.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cb_steam.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_steam.ForeColor = System.Drawing.Color.White;
-            this.cb_steam.Location = new System.Drawing.Point(135, 165);
+            this.cb_steam.Location = new System.Drawing.Point(135, 197);
             this.cb_steam.Margin = new System.Windows.Forms.Padding(5);
             this.cb_steam.Name = "cb_steam";
             this.cb_steam.Size = new System.Drawing.Size(62, 19);
@@ -865,7 +985,7 @@ namespace ToolBOX_Remastered
             this.cb_vlc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cb_vlc.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_vlc.ForeColor = System.Drawing.Color.White;
-            this.cb_vlc.Location = new System.Drawing.Point(135, 123);
+            this.cb_vlc.Location = new System.Drawing.Point(135, 139);
             this.cb_vlc.Margin = new System.Windows.Forms.Padding(5);
             this.cb_vlc.Name = "cb_vlc";
             this.cb_vlc.Size = new System.Drawing.Size(46, 19);
@@ -884,7 +1004,7 @@ namespace ToolBOX_Remastered
             this.cb_klite.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cb_klite.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_klite.ForeColor = System.Drawing.Color.White;
-            this.cb_klite.Location = new System.Drawing.Point(292, 123);
+            this.cb_klite.Location = new System.Drawing.Point(282, 139);
             this.cb_klite.Margin = new System.Windows.Forms.Padding(5);
             this.cb_klite.Name = "cb_klite";
             this.cb_klite.Size = new System.Drawing.Size(100, 19);
@@ -902,14 +1022,14 @@ namespace ToolBOX_Remastered
             this.installbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.installbtn.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.installbtn.ForeColor = System.Drawing.Color.White;
-            this.installbtn.Location = new System.Drawing.Point(238, 492);
+            this.installbtn.Location = new System.Drawing.Point(282, 492);
             this.installbtn.Margin = new System.Windows.Forms.Padding(0);
             this.installbtn.Name = "installbtn";
-            this.installbtn.Size = new System.Drawing.Size(368, 33);
+            this.installbtn.Size = new System.Drawing.Size(324, 33);
             this.installbtn.TabIndex = 89;
             this.installbtn.Text = "INSTALL";
             this.installbtn.UseVisualStyleBackColor = false;
-            this.installbtn.Click += new System.EventHandler(this.installbtn_Click);
+            this.installbtn.Click += new System.EventHandler(this.Installbtn_Click);
             // 
             // tools_txt
             // 
@@ -930,7 +1050,7 @@ namespace ToolBOX_Remastered
             this.gaming_txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
             this.gaming_txt.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gaming_txt.ForeColor = System.Drawing.Color.White;
-            this.gaming_txt.Location = new System.Drawing.Point(27, 166);
+            this.gaming_txt.Location = new System.Drawing.Point(27, 199);
             this.gaming_txt.Name = "gaming_txt";
             this.gaming_txt.Size = new System.Drawing.Size(52, 15);
             this.gaming_txt.TabIndex = 93;
@@ -942,7 +1062,7 @@ namespace ToolBOX_Remastered
             this.internet_txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
             this.internet_txt.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.internet_txt.ForeColor = System.Drawing.Color.White;
-            this.internet_txt.Location = new System.Drawing.Point(27, 231);
+            this.internet_txt.Location = new System.Drawing.Point(27, 257);
             this.internet_txt.Margin = new System.Windows.Forms.Padding(0);
             this.internet_txt.Name = "internet_txt";
             this.internet_txt.Size = new System.Drawing.Size(57, 15);
@@ -1004,6 +1124,33 @@ namespace ToolBOX_Remastered
             this.windows_tweaker.Size = new System.Drawing.Size(622, 541);
             this.windows_tweaker.TabIndex = 0;
             // 
+            // button16
+            // 
+            this.button16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
+            this.button16.FlatAppearance.BorderSize = 0;
+            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button16.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button16.ForeColor = System.Drawing.Color.White;
+            this.button16.Location = new System.Drawing.Point(517, 178);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(74, 23);
+            this.button16.TabIndex = 159;
+            this.button16.Text = "APPLY";
+            this.button16.UseVisualStyleBackColor = false;
+            this.button16.Click += new System.EventHandler(this.Button16_Click);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(15)))), ((int)(((byte)(20)))));
+            this.label19.Font = new System.Drawing.Font("Candara", 9F, System.Drawing.FontStyle.Bold);
+            this.label19.ForeColor = System.Drawing.SystemColors.Control;
+            this.label19.Location = new System.Drawing.Point(340, 182);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(126, 14);
+            this.label19.TabIndex = 158;
+            this.label19.Text = "Set Services to Manual:";
+            // 
             // button15
             // 
             this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
@@ -1017,7 +1164,7 @@ namespace ToolBOX_Remastered
             this.button15.TabIndex = 157;
             this.button15.Text = "APPLY";
             this.button15.UseVisualStyleBackColor = false;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
+            this.button15.Click += new System.EventHandler(this.Button15_Click);
             // 
             // label18
             // 
@@ -1044,7 +1191,7 @@ namespace ToolBOX_Remastered
             this.button14.TabIndex = 155;
             this.button14.Text = "APPLY";
             this.button14.UseVisualStyleBackColor = false;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
+            this.button14.Click += new System.EventHandler(this.Button14_Click);
             // 
             // label17
             // 
@@ -1093,7 +1240,7 @@ namespace ToolBOX_Remastered
             this.button13.TabIndex = 151;
             this.button13.Text = "APPLY";
             this.button13.UseVisualStyleBackColor = false;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
+            this.button13.Click += new System.EventHandler(this.Button13_Click);
             // 
             // label14
             // 
@@ -1120,7 +1267,7 @@ namespace ToolBOX_Remastered
             this.button12.TabIndex = 149;
             this.button12.Text = "APPLY";
             this.button12.UseVisualStyleBackColor = false;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
+            this.button12.Click += new System.EventHandler(this.Button12_Click);
             // 
             // label13
             // 
@@ -1158,7 +1305,7 @@ namespace ToolBOX_Remastered
             this.button11.TabIndex = 146;
             this.button11.Text = "APPLY";
             this.button11.UseVisualStyleBackColor = false;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
+            this.button11.Click += new System.EventHandler(this.Button11_Click);
             // 
             // label11
             // 
@@ -1185,7 +1332,7 @@ namespace ToolBOX_Remastered
             this.button7.TabIndex = 143;
             this.button7.Text = "APPLY";
             this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.button7.Click += new System.EventHandler(this.Button7_Click);
             // 
             // label7
             // 
@@ -1212,7 +1359,7 @@ namespace ToolBOX_Remastered
             this.button10.TabIndex = 142;
             this.button10.Text = "APPLY";
             this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.button10.Click += new System.EventHandler(this.Button10_Click);
             // 
             // label10
             // 
@@ -1239,7 +1386,7 @@ namespace ToolBOX_Remastered
             this.button9.TabIndex = 140;
             this.button9.Text = "APPLY";
             this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.button9.Click += new System.EventHandler(this.Button9_Click);
             // 
             // label9
             // 
@@ -1266,7 +1413,7 @@ namespace ToolBOX_Remastered
             this.button8.TabIndex = 138;
             this.button8.Text = "APPLY";
             this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.button8.Click += new System.EventHandler(this.Button8_Click);
             // 
             // label8
             // 
@@ -1293,7 +1440,7 @@ namespace ToolBOX_Remastered
             this.button6.TabIndex = 136;
             this.button6.Text = "APPLY";
             this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.button6.Click += new System.EventHandler(this.Button6_Click);
             // 
             // label6
             // 
@@ -1320,7 +1467,7 @@ namespace ToolBOX_Remastered
             this.button5.TabIndex = 134;
             this.button5.Text = "APPLY";
             this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button5.Click += new System.EventHandler(this.Button5_Click);
             // 
             // label5
             // 
@@ -1347,7 +1494,7 @@ namespace ToolBOX_Remastered
             this.button4.TabIndex = 132;
             this.button4.Text = "APPLY";
             this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
             // 
             // label4
             // 
@@ -1374,7 +1521,7 @@ namespace ToolBOX_Remastered
             this.button3.TabIndex = 130;
             this.button3.Text = "APPLY";
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
             // label3
             // 
@@ -1401,7 +1548,7 @@ namespace ToolBOX_Remastered
             this.button2.TabIndex = 128;
             this.button2.Text = "APPLY";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // label2
             // 
@@ -1440,7 +1587,7 @@ namespace ToolBOX_Remastered
             this.button1.TabIndex = 125;
             this.button1.Text = "APPLY";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // tweaker_txt2
             // 
@@ -1475,10 +1622,18 @@ namespace ToolBOX_Remastered
             this.topbar_tweaker.TabIndex = 121;
             this.topbar_tweaker.TabStop = false;
             // 
+            // toolTip1
+            // 
+            this.toolTip1.AutoPopDelay = 5000;
+            this.toolTip1.BackColor = System.Drawing.Color.White;
+            this.toolTip1.InitialDelay = 300;
+            this.toolTip1.IsBalloon = true;
+            this.toolTip1.ReshowDelay = 100;
+            // 
             // naetech
             // 
             this.naetech.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(20)))), ((int)(((byte)(40)))));
-            this.naetech.Image = global::ToolBOX_Remastered.Properties.Resources.naetech_logo_small;
+            this.naetech.Image = global::ToolBOX.Properties.Resources.naetech_logo_small;
             this.naetech.Location = new System.Drawing.Point(15, 7);
             this.naetech.Name = "naetech";
             this.naetech.Size = new System.Drawing.Size(151, 46);
@@ -1494,46 +1649,63 @@ namespace ToolBOX_Remastered
             this.top_bar.Size = new System.Drawing.Size(800, 60);
             this.top_bar.TabIndex = 69;
             this.top_bar.TabStop = false;
-            this.top_bar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.top_bar_MouseDown);
-            this.top_bar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.top_bar_MouseMove);
-            this.top_bar.MouseUp += new System.Windows.Forms.MouseEventHandler(this.top_bar_MouseUp);
+            this.top_bar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Top_bar_MouseDown);
+            this.top_bar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Top_bar_MouseMove);
+            this.top_bar.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Top_bar_MouseUp);
             // 
-            // toolTip1
+            // tip5
             // 
-            this.toolTip1.AutoPopDelay = 5000;
-            this.toolTip1.BackColor = System.Drawing.Color.White;
-            this.toolTip1.InitialDelay = 300;
-            this.toolTip1.IsBalloon = true;
-            this.toolTip1.ReshowDelay = 100;
+            this.tip5.AutoSize = true;
+            this.tip5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tip5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.tip5.Location = new System.Drawing.Point(376, 105);
+            this.tip5.Name = "tip5";
+            this.tip5.Size = new System.Drawing.Size(18, 20);
+            this.tip5.TabIndex = 135;
+            this.tip5.Text = "?";
             // 
-            // button16
+            // tip6
             // 
-            this.button16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
-            this.button16.FlatAppearance.BorderSize = 0;
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button16.ForeColor = System.Drawing.Color.White;
-            this.button16.Location = new System.Drawing.Point(517, 178);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(74, 23);
-            this.button16.TabIndex = 159;
-            this.button16.Text = "APPLY";
-            this.button16.UseVisualStyleBackColor = false;
-            this.button16.Click += new System.EventHandler(this.button16_Click);
+            this.tip6.AutoSize = true;
+            this.tip6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tip6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.tip6.Location = new System.Drawing.Point(235, 391);
+            this.tip6.Name = "tip6";
+            this.tip6.Size = new System.Drawing.Size(18, 20);
+            this.tip6.TabIndex = 136;
+            this.tip6.Text = "?";
             // 
-            // label19
+            // cb_stremio
             // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(15)))), ((int)(((byte)(20)))));
-            this.label19.Font = new System.Drawing.Font("Candara", 9F, System.Drawing.FontStyle.Bold);
-            this.label19.ForeColor = System.Drawing.SystemColors.Control;
-            this.label19.Location = new System.Drawing.Point(340, 182);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(126, 14);
-            this.label19.TabIndex = 158;
-            this.label19.Text = "Set Services to Manual:";
+            this.cb_stremio.AutoSize = true;
+            this.cb_stremio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(15)))), ((int)(((byte)(20)))));
+            this.cb_stremio.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.cb_stremio.FlatAppearance.BorderSize = 0;
+            this.cb_stremio.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
+            this.cb_stremio.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.cb_stremio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cb_stremio.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_stremio.ForeColor = System.Drawing.Color.White;
+            this.cb_stremio.Location = new System.Drawing.Point(135, 164);
+            this.cb_stremio.Margin = new System.Windows.Forms.Padding(5);
+            this.cb_stremio.Name = "cb_stremio";
+            this.cb_stremio.Size = new System.Drawing.Size(71, 19);
+            this.cb_stremio.TabIndex = 137;
+            this.cb_stremio.Text = "Stremio";
+            this.cb_stremio.UseVisualStyleBackColor = false;
             // 
-            // toolbox
+            // tip7
+            // 
+            this.tip7.AutoSize = true;
+            this.tip7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tip7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.tip7.Location = new System.Drawing.Point(212, 163);
+            this.tip7.Name = "tip7";
+            this.tip7.Size = new System.Drawing.Size(18, 20);
+            this.tip7.TabIndex = 138;
+            this.tip7.Text = "?";
+            // 
+            // Toolbox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
@@ -1553,10 +1725,10 @@ namespace ToolBOX_Remastered
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(800, 600);
             this.MinimumSize = new System.Drawing.Size(800, 600);
-            this.Name = "toolbox";
+            this.Name = "Toolbox";
             this.Padding = new System.Windows.Forms.Padding(5);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ToolBOX Remastered by NaeTech";
+            this.Text = "ToolBOX by NaeTech";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.side_panel.ResumeLayout(false);
             this.side_panel.PerformLayout();
@@ -1675,6 +1847,16 @@ namespace ToolBOX_Remastered
         private System.Windows.Forms.Label tip4;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.CheckBox cb_handbrake;
+        private System.Windows.Forms.CheckBox cb_bcuninstaller;
+        private System.Windows.Forms.CheckBox cb_anydesk;
+        private System.Windows.Forms.CheckBox cb_wincdemu;
+        private System.Windows.Forms.CheckBox cb_vmware;
+        private System.Windows.Forms.CheckBox cb_notepadpp;
+        private System.Windows.Forms.Label tip5;
+        private System.Windows.Forms.Label tip6;
+        private System.Windows.Forms.CheckBox cb_stremio;
+        private System.Windows.Forms.Label tip7;
     }
 }
 

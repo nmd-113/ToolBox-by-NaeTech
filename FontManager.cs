@@ -5,7 +5,7 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
-namespace ToolBOX_Remastered
+namespace ToolBOX_by_Naetech
 {
     internal class FontManager
     {
@@ -15,8 +15,8 @@ namespace ToolBOX_Remastered
         {
             try
             {
-                AddFontResource("ToolBOX_Remastered.Fonts.BunkenTechSansPro-Bold.ttf");
-                AddFontResource("ToolBOX_Remastered.Fonts.BunkenTechSansPro-Book.ttf");
+                AddFontResource("ToolBOX.Fonts.BunkenTechSansPro-Bold.ttf");
+                AddFontResource("ToolBOX.Fonts.BunkenTechSansPro-Book.ttf");
             }
             catch (Exception ex)
             {
@@ -42,7 +42,7 @@ namespace ToolBOX_Remastered
                 Marshal.Copy(fontData, 0, fontPtr, fontData.Length);
                 customFonts.AddMemoryFont(fontPtr, fontData.Length);
 
-                uint fontsAdded = 0; // Declare a variable to hold the number of fonts added
+                uint fontsAdded = 0;
                 AddFontMemResourceEx(fontPtr, (uint)fontData.Length, IntPtr.Zero, ref fontsAdded);
 
                 Marshal.FreeCoTaskMem(fontPtr);
@@ -67,15 +67,15 @@ namespace ToolBOX_Remastered
                 {
                     if (control is Label label)
                     {
-                        label.Font = new Font(customFonts.Families[1], label.Font.Size, FontStyle.Regular); // Book Font
+                        label.Font = new Font(customFonts.Families[1], label.Font.Size, FontStyle.Regular);
                     }
                     else if (control is Button button)
                     {
-                        button.Font = new Font(customFonts.Families[0], button.Font.Size, FontStyle.Bold); // Bold Font
+                        button.Font = new Font(customFonts.Families[0], button.Font.Size, FontStyle.Bold);
                     }
                     else if (control is CheckBox checkBox)
                     {
-                        checkBox.Font = new Font(customFonts.Families[1], checkBox.Font.Size, FontStyle.Regular); // Book Font (same as Label)
+                        checkBox.Font = new Font(customFonts.Families[1], checkBox.Font.Size, FontStyle.Regular);
                     }
 
                     if (control.HasChildren)
@@ -96,15 +96,15 @@ namespace ToolBOX_Remastered
             {
                 if (control is Label label)
                 {
-                    label.Font = new Font(customFonts.Families[1], label.Font.Size, FontStyle.Regular); // Book Font
+                    label.Font = new Font(customFonts.Families[1], label.Font.Size, FontStyle.Regular);
                 }
                 else if (control is Button button)
                 {
-                    button.Font = new Font(customFonts.Families[0], button.Font.Size, FontStyle.Bold); // Bold Font
+                    button.Font = new Font(customFonts.Families[0], button.Font.Size, FontStyle.Bold);
                 }
                 else if (control is CheckBox checkBox)
                 {
-                    checkBox.Font = new Font(customFonts.Families[1], checkBox.Font.Size, FontStyle.Regular); // Book Font (same as Label)
+                    checkBox.Font = new Font(customFonts.Families[1], checkBox.Font.Size, FontStyle.Regular);
                 }
 
                 if (control.HasChildren)
