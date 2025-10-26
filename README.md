@@ -1,22 +1,24 @@
-# ToolBOX Remastered
+# ToolBOX by NaeTech
 
-ToolBOX Remastered is a versatile Windows utility designed to streamline application installations and apply system tweaks. This tool provides a convenient interface to quickly install essential software and optimize your Windows environment with a single click.
+ToolBOX by NaeTech is a versatile Windows utility designed to streamline application installations and apply system tweaks. This tool provides a convenient interface to quickly install essential software and optimize your Windows environment with a single click.
 
 ---
 
 ## Features
 
 ### Quick Installer
-Effortlessly install a suite of popular applications. ToolBOX Remastered offers the flexibility to use **Winget** for a clean, up-to-date installation or fall back to direct downloads if Winget isn't available or preferred.
+Effortlessly install a suite of popular applications. ToolBOX by NaeTech offers the flexibility to use **Winget** for a clean, up-to-date installation or fall back to direct downloads if Winget isn't available or preferred.
 
 Key applications available for installation include:
 * **Archivers:** 7-Zip
 * **Torrent Clients:** qBittorrent
 * **Media Players:** VLC Media Player, K-Lite Codec Pack Standard
+* **Media Converters:** HandBrake
 * **Gaming Launchers:** Steam, Epic Games Launcher, EA App, GOG Galaxy, Ubisoft Connect, GeForce Now
 * **Web Browsers:** Chrome, Opera, Brave, Firefox
 * **Productivity:** LibreOffice, PDF Gear, MS Office 2021 Lite, Adobe Acrobat Reader
 * **Runtimes & Frameworks:** DirectX, .NET Runtime (all versions), Microsoft Visual C++ Redistributables (2005-2022)
+* **And more...**
 
 ### Windows Tweaker
 Optimize your Windows experience with a collection of powerful tweaks.
@@ -32,9 +34,9 @@ Available tweaks include:
 ## Getting Started
 
 ### Installation
-1.  Download the latest release from the [releases page](https://github.com/nmd-113/ToolBOX-Remastered/releases).
+1.  Download the latest release from the [releases page](https://github.com/nmd-113/ToolBOX-by-NaeTech/releases).
 2.  Extract the contents of the downloaded archive to your desired location.
-3.  Run `ToolBOX_Remastered.exe`.
+3.  Run `ToolBOX-by-NaeTech.exe`.
 
 ### Usage
 
